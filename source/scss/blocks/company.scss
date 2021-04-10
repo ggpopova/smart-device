@@ -1,0 +1,58 @@
+.company {
+  position: relative;
+  max-width: 1174px;
+  margin-bottom: 110px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: -29px;
+    width: 220px;
+    height: 317px;
+    background-image: url("../img/photo-year.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+.company-wrap {
+  padding-left: 186px;
+}
+
+.company h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $gray;
+}
+
+.company-wrap p {
+  margin: 0;
+  line-height: 22px;
+  color: $gray;
+}
+
+.company-wrap > p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.company-wrap button {
+  min-width: 180px;
+  margin-top: 38px;
+  padding: 14px 13px;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-blue;
+  border: 1px solid $basic-blue;
+  border-radius: 5px;
+  background-color: $basic-white;
+}

@@ -1,0 +1,67 @@
+.catalog {
+  padding-top: 88px;
+  padding-bottom: 126px;
+  background-color: $gray-darkest;
+}
+
+.catalog h3 {
+  margin: 0;
+  margin-bottom: 52px;
+  padding-left: 124px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $basic-white;
+}
+
+.catalog-item {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 27px;
+  max-width: 1174px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+
+.catalog-list figure {
+  position: relative;
+  margin: 0; 
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: 5px;
+    bottom: 5px;
+    width: 63px;
+    height: 63px;
+    background-color: $basic-blue;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 58%;
+    z-index: 3;
+  }
+}
+
+.catalog-list img {
+  position: relative;
+  opacity: 0.2;
+
+  
+}
+
+.catalog-list figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 150px;
+  padding: 53px 44px;
+  line-height: 1.5;
+  text-align: left;
+  color: $basic-white;
+  max-width: 250px;
+  z-index: 0;
+}

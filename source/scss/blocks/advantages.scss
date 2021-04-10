@@ -1,0 +1,63 @@
+.advantages {
+  position: relative;
+  max-width: 1174px;
+  margin-top: 111px;
+  margin-bottom: 105px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -637px;
+    left: -374px;
+    width: 1920px;
+    height: 1354px;
+    background-image: url("../img/polygon.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 1;
+  }
+}
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 42px 36px 66px 43px;
+  background-color: $basic-white;
+  border: 1px solid $gray-lightest;
+  border-left: 3px solid $basic-blue;
+  z-index: 1;
+}
+
+.advantages__item:nth-child(3n) > p:nth-child(3n){
+  margin-bottom: 46px;
+}
+
+.advantages__item svg {
+  margin-bottom: 19px;
+}
+
+.advantages__item h3 {
+  margin: 0;
+  margin-bottom: 14px;
+  font-family: Roboto Condensed;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: $basic-blue;
+}
+
+.advantages__item p {
+  margin: 0;
+  line-height: 22px;
+  color: $gray;
+}

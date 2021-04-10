@@ -1,0 +1,98 @@
+.contacts {
+  position: relative;
+  padding-top: 89px;
+  padding-bottom: 114px;
+  background-color: $basic-blue;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1745px;
+    height: 765px;
+    background-image: url("../img/photo-6.png");
+    background-repeat: no-repeat;
+    transform: translate(10%, -19.5%);
+  }
+}
+
+.contacts-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  margin-left: auto;
+  margin-right: 129px;
+}
+
+.contacts h3 {
+  margin: 0;
+  margin-bottom: 14px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $basic-white;
+}
+
+.contacts p {
+  margin: 0;
+  margin-bottom: 53px;
+  color: $basic-white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+}
+
+.form-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 43px;
+}
+
+.form input {
+  width: 270px;
+  padding: 11px 16px;
+  color: $basic-white;
+  opacity: 0.1;
+}
+
+.form textarea {
+  margin-bottom: 39px;
+  padding: 13px 16px;
+  color: $basic-white;
+  opacity: 0.1;
+}
+
+.form__submit {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__submit button {
+  width: 270px;
+  margin-right: 38px;
+  padding: 14px 18px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-blue;
+  border: 1px solid $basic-white;
+  border-radius: 5px;
+}
+
+.form__submit label {
+  width: 230px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-white;
+  opacity: 0.8;
+}
