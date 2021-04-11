@@ -1,0 +1,119 @@
+.modal {
+  position: fixed;
+  top: 46.4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $basic-blue;
+  color: $basic-white;
+  z-index: 2;
+  display: none;
+}
+
+.modal-overlay {
+  width: 490px;
+  height: 605px;
+  padding: 31px 39px 36px;
+}
+
+.modal__close-btn {
+  position: fixed;
+  background-color: $basic-white;
+  z-index: 3;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 409px;
+    width: 23px;
+    height: 1px;
+    background-color: $basic-white;
+    background-position: 50% 50%;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.modal__wrap h3 {
+  margin: 0;
+  margin-bottom: 11px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 39px;
+}
+
+.modal__wrap p {
+  margin: 0;
+  margin-bottom: 32px;
+  line-height: 22px;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-modal input {
+  width: 100%;
+  margin-bottom: 32px;
+  line-height: 22px;
+}
+
+.form-modal textarea {
+  margin-bottom: 34px;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-modal button {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 14px 18px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-blue;
+  border: 1px solid $basic-white;
+  border-radius: 5px;
+}
+
+.form-modal__submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-white;
+  opacity: 0.8;
+}
+
+.form-modal__submit input {
+  margin: 0;
+}
+
+// .form-modal__submit input {
+//   display: none;
+// }
+
+.form-modal__submit label {
+  padding-left: 56px;
+}

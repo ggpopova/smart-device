@@ -1,5 +1,12 @@
 .container {
-  max-width: 1420px;
+  max-width: 1460px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 1024px) {
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -14,3 +21,25 @@
     max-width: 320px;
   }
 }
+
+
+// //  декстоп  от 1024px и больше
+// @media (max-width: 1023px) {
+//   .container {
+//     max-width: 1023px;
+//   }
+// }
+
+// //  планшет от 768px до 1023px
+// @media (max-width: 767px) {
+//   .container {
+//     max-width: 767px;
+//   }
+// }
+
+// // мобильная от 320px до 767px
+// @media (max-width: 320px) {
+//   .container {
+//     max-width: 320px;
+//   }
+// }

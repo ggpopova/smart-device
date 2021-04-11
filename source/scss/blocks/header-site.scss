@@ -1,23 +1,10 @@
 .header-site {
-  position: relative;
   width: 100%;
   background-color: $gray-darkest;
-  background-image: url("../img/photo-1.png");
+  background-image: url("../img/photo-1.png"), url("../img/photo-2.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   z-index: -2;
-
-  &::before {
-    position: absolute;
-    content: "";
-    right: 0;
-    width: 1920px;
-    height: 776px;
-    background-image: url("../img/photo-2.png");
-    background-repeat: no-repeat;
-    background-size: 1920px auto;
-    z-index: -1;
-  }
 }
 
 .header-site-wrap {
@@ -32,6 +19,11 @@
   margin-top: 32px;
   margin-bottom: 229px;
   padding: 0 5px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 18px;
+    margin-bottom: 115px;
+  }
 }
 
 .header-logo {
@@ -48,7 +40,7 @@
 }
 
 .site-navigation-link {
-  margin-left: 35px; 
+  margin-left: 35px;
 }
 
 .site-navigation-link:nth-child(2n) {
@@ -65,14 +57,23 @@
 
 .site-navigation-link svg {
   vertical-align: middle;
+
+  @media (max-width: $desktop-width) {
+    width: 25px;
+    height: 19px;
+  }
 }
 
 .site-navigation-link span {
-padding-left: 5px;
+  padding-left: 5px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .site-navigation-link--mdl {
-  padding: 14px 27px; 
+  padding: 14px 27px;
   font-family: Roboto Condensed;
   font-weight: bold;
   font-size: 14px;
@@ -82,6 +83,10 @@ padding-left: 5px;
   text-transform: uppercase;
   border: 1px solid $basic-white;
   border-radius: 5px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .header-hero {
@@ -109,6 +114,14 @@ padding-left: 5px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: $basic-white;
+
+  @media (max-width: $desktop-width) {
+    max-width: 386px;
+    margin: 0 0 29px;
+    padding-left: 68px;
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
 
 .header-hero-wrap p {
@@ -123,12 +136,29 @@ padding-left: 5px;
   &::before {
     position: absolute;
     content: "";
-    left: 0;
     top: 17px;
+    left: 0;
     width: 66px;
     height: 2px;
     background-color: $basic-white;
+  }
 
+  @media (max-width: $desktop-width) {
+    max-width: 466px;
+    padding-left: 119px;
+    margin: 0 0 55px;
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      width: 33px;
+      top: 15px;
+      left: 71px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 370px;
   }
 }
 
@@ -147,6 +177,12 @@ padding-left: 5px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $basic-white;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 119px;
+    margin-bottom: 164px;
+    padding: 17px 31px;
+  }
 }
 
 .header-hero-wrap-btn span {
@@ -163,4 +199,8 @@ padding-left: 5px;
   line-height: 16px;
   opacity: .5;
   transform: translate(-45px, 323%) rotate(-90deg);
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
