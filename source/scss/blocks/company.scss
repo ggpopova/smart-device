@@ -1,7 +1,24 @@
 .company {
+  margin-bottom: 110px;
+  transform: rotate(-30deg);
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 83px;
+    transform: rotate(-118deg);
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 64px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.company-wrap {
   position: relative;
   max-width: 1174px;
-  margin-bottom: 110px;
+  margin: 0 auto;
+  padding-left: 164px;
 
   &::before {
     position: absolute;
@@ -16,7 +33,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 83px;
+    padding-left: 193px;
     padding-right: 19px;
 
     &::before {
@@ -26,20 +43,20 @@
       height: 362px;
     }
   }
-}
 
-.company-wrap {
-  padding-left: 164px;
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
 
-  @media (max-width: $desktop-width) {
-    padding-left: 193px;
+    &::before {
+      display: none;
+    }
   }
 }
 
 .company h3 {
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -53,6 +70,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 18px;
     font-size: 28px;
     line-height: 39px;
   }
@@ -66,6 +84,10 @@
 .company-wrap__text-start {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
 }
 .company-wrap__text {
   @media (max-width: $desktop-width) {
@@ -83,13 +105,17 @@
     color: $gray;
     margin-bottom: 20px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
 }
 
 .company-wrap button {
   min-width: 180px;
   margin-top: 38px;
   padding: 14px 13px;
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-weight: bold;
   line-height: 16px;
   text-align: center;
@@ -99,6 +125,14 @@
   border: 1px solid $basic-blue;
   border-radius: 5px;
   background-color: $basic-white;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 
   @media (max-width: $desktop-width) {
     margin-top: 20px;
