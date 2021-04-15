@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-6@2x.png");
+  }
+
   @media (max-width: $desktop-width-max) {
     background-position: top -62px left 174px;
   }

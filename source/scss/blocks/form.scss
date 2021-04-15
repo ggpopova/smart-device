@@ -161,7 +161,7 @@
   border: 1px solid;
 }
 
-.form__submit input:checked + label::before {
+.form__submit input:checked + label {
   position: relative;
 
   &::before {
@@ -169,7 +169,7 @@
     content: "";
     width: 16px;
     height: 16px;
-    background-image: url("../img/close-button.svg");
+    background-image: url("../img/icon-checkmark.svg");
     background-repeat: no-repeat;
   }
 }
