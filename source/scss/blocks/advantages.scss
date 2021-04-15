@@ -1,56 +1,47 @@
 .main-wrap {
-  background-image: url("../img/polygon-1.png");
+  background-image: url("../img/triangle-pattern.svg");
   background-repeat: no-repeat;
-  background-size: 1886px 1696px;
-  background-position: top -149px left 5px;
-  transform: rotate(30deg);
+  background-size: 2243px 1347px;
+  background-position: top -28px left -300px;
 
   @media (max-width: $desktop-width) {
-    background-image: url("../img/polygon-2.png");
-    background-size: 770px 836px;
-    transform: rotate(118deg);
+    background-image: url("../img/triangle-pattern-2.svg");
+    background-position: top -349px left -469px;
   }
 
   @media (max-width: $tablet-width) {
-
+    background-image: url("../img/triangle-pattern-3.svg");
+    background-position: bottom 54px left -469px;
   }
 }
 
-.advantages {
-  transform: rotate(-30deg);
+// .advantages {
 
-  @media (max-width: $desktop-width) {
-    margin-top: 53px;
-    margin-bottom: 65px;
-    transform: rotate(-118deg);
-  }
+// }
 
-  @media (max-width: $tablet-width) {
-    margin-top: 37px;
-    margin-bottom: 59px;
-    padding-left: 12px;
-    padding-right: 11px;
-  }
-
-}
-
-.advantages-list {
+.advantages__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 1214px;
-  margin-top: 111px;
-  margin-bottom: 105px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+  margin: 0 auto 105px;
+  padding: 111px 20px 0;
   list-style: none;
 
+  @media (max-width: $desktop-width) {
+    gap: 29px;
+    margin: 55px auto 65px;
+    padding-top: 53px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
+    margin-top: 37px;
+    margin-bottom: 59px;
+    padding-left: 12px;
+    padding-right: 11px;
   }
 
   @media (max-width: $mobile-width) {
@@ -89,19 +80,8 @@
     padding: 25px 17px 29px 27px;
   }
 }
-  // @media (max-width: $mobile-width) {
-  //   padding: 25px 15px 29px 27px;
-  // }
-// }
 
-// .advantages__item:nth-child(1n) {
-//   @media (max-width: $tablet-width) {
-//     padding-right: 20px;
-//   }
-
-// }
-
-.advantages__item:nth-child(3n) > p:nth-child(3n){
+.advantages__item:nth-child(3n) > p:nth-child(3n) {
   margin-bottom: 46px;
 
   @media (max-width: $desktop-width) {

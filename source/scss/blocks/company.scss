@@ -1,10 +1,8 @@
 .company {
   margin-bottom: 110px;
-  transform: rotate(-30deg);
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 83px;
-    transform: rotate(-118deg);
+    margin-bottom: 85px;
   }
 
   @media (max-width: $tablet-width) {
@@ -14,17 +12,20 @@
   }
 }
 
-.company-wrap {
+.company__wrapper {
   position: relative;
   max-width: 1174px;
   margin: 0 auto;
-  padding-left: 164px;
+  padding-right: 8px;
+  padding-left: 191px;
+  line-height: 22px;
+  color: $gray;
 
   &::before {
     position: absolute;
     content: "";
-    top: 5px;
-    left: -2.5%;
+    top: 6px;
+    left: -1.8%;
     width: 220px;
     height: 317px;
     background-image: url("../img/photo-year.png");
@@ -33,12 +34,12 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding-left: 193px;
-    padding-right: 19px;
+    padding-left: 191px;
+    padding-right: 5px;
 
     &::before {
-      top: -4px;
-      left: -1%;
+      top: -2px;
+      left: -3.7%;
       width: 251px;
       height: 362px;
     }
@@ -76,12 +77,7 @@
   }
 }
 
-.company-wrap {
-  line-height: 22px;
-  color: $gray;
-}
-
-.company-wrap__text-start {
+.company__text-start {
   margin: 0;
   margin-bottom: 20px;
 
@@ -89,18 +85,21 @@
     margin-bottom: 41px;
   }
 }
-.company-wrap__text {
+
+.company__text {
+  margin: 0;
+
   @media (max-width: $desktop-width) {
-    display:  none
+    display: none;
   }
 }
 
-.company-wrap__text-excerpt {
+.company__text-excerpt {
   display: none;
+  margin: 0;
 
   @media (max-width: $desktop-width) {
-    display:  block;
-    margin: 0;
+    display: block;
     line-height: 22px;
     color: $gray;
     margin-bottom: 20px;
@@ -111,9 +110,9 @@
   }
 }
 
-.company-wrap button {
+.company button {
   min-width: 180px;
-  margin-top: 38px;
+  margin-top: 40px;
   padding: 14px 13px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-weight: bold;

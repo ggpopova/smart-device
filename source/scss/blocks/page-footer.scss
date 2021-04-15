@@ -10,12 +10,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1454px;
+  // max-width: 1454px;
   margin: 0 auto;
-  padding: 66px 20px 60px;
+  padding: 66px 15px 60px 26px;
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
+    padding: 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -24,47 +25,54 @@
   }
 }
 
-page-footer__links-wrap {
+.page-footer__links-wrap {
+  position: relative;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 4px;
+    width: 100vw;
+    height: 1px;
+    border: 1px solid $border-gray;
+    opacity: 0.2;
+  }
 
   @media (max-width: $desktop-width) {
-    position: relative;
-    margin: 0 auto;
-
     &::before {
       position: absolute;
       content: "";
-      bottom: 4px;
-      width: 400px;
+      bottom: -3px;
+      width: 100vw;
       height: 1px;
       border: 1px solid $border-gray;
       opacity: 0.2;
     }
   }
+
+  // @media (max-width: $tablet-width) {
+  //   &::before {
+  //     bottom: 48px;
+  //   }
+  // }
 }
 
 .page-footer__links {
   max-width: 250px;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  margin-right: 80px;
 
   @media (max-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    min-width: 721px;
+    max-width: 721px;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    margin: 0 auto;
-
-    &::before {
-      position: absolute;
-      content: "";
-      bottom: 4px;
-      width: 100%;
-      height: 1px;
-      border: 1px solid $border-gray;
-      opacity: 0.2;
-    }
+    padding-left: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -74,6 +82,7 @@ page-footer__links-wrap {
 
 .page-footer__links img {
   margin-bottom: 51px;
+
   &:hover,
   &:focus {
     opacity: 1;
@@ -81,6 +90,10 @@ page-footer__links-wrap {
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -93,6 +106,7 @@ page-footer__links-wrap {
 .page-footer__links p {
   display: none;
   margin: 0;
+  margin-bottom: 32px;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
@@ -103,7 +117,7 @@ page-footer__links-wrap {
 
   @media (max-width: $desktop-width) {
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 0;
   }
 }
 
@@ -111,7 +125,7 @@ page-footer__links-wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 114px;
+  max-width: 111px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -143,6 +157,8 @@ page-footer__links-wrap {
 
   @media (max-width: $desktop-width) {
     flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
   @media (max-width: $tablet-width) {
@@ -152,10 +168,10 @@ page-footer__links-wrap {
 
 .page-footer__menu {
   max-width: 480px;
-  margin-right: 231px;
+  margin-right: 226px;
 
   @media (max-width: $desktop-width) {
-    margin-right: 141px;
+    margin-right: 65px;
   }
 
   @media (max-width: $tablet-width) {
@@ -166,6 +182,7 @@ page-footer__links-wrap {
 .accordion {
   @media (max-width: $tablet-width) {
     position: relative;
+
     &::before {
       position: absolute;
       content: "";
@@ -202,16 +219,9 @@ page-footer__links-wrap {
     cursor: pointer;
   }
 }
-// .accordion input:checked + label,
-// .accordion input:checked + label:hover{
-//     background: #c6e1ec;
-//     color: #3d7489;
-// }
 
-
-.accordion label:after,
-.accordion input:checked + label:after{
-
+.accordion label::after,
+.accordion input:checked + label::after {
   @media (max-width: $tablet-width) {
     content: "";
     position: absolute;
@@ -224,7 +234,8 @@ page-footer__links-wrap {
     background-position: 50% 50%;
   }
 }
-.accordion input:checked + label:after {
+
+.accordion input:checked + label::after {
   @media (max-width: $tablet-width) {
     content: "";
     position: absolute;
@@ -237,10 +248,9 @@ page-footer__links-wrap {
   }
 }
 
-.accordion input{
+.accordion input {
   display: none;
 }
-
 
 .accordion__panel {
   display: flex;
@@ -310,15 +320,14 @@ page-footer__links-wrap {
   &:active {
     opacity: 0.5;
   }
-
 }
 
 .page-footer__contacts {
   max-width: 400px;
+
   @media (max-width: $desktop-width) {
     min-width: 333px;
   }
-
 }
 
 .page-footer__contacts h3 {
@@ -368,36 +377,52 @@ page-footer__links-wrap {
   &:active {
     opacity: 0.5;
   }
-
 }
 
-// .page-footer__bottom {
-//   position: relative;
+.page-footer__bottom {
+  position: relative;
 
-//   &::before {
-//     position: absolute;
-//     content: "";
-//     top: -18px;
-//     width: 100%;
-//     border: 1px solid $border-gray;
-//     opacity: 0.2;
-//   }
-// }
+  &::before {
+    position: absolute;
+    content: "";
+    top: -18px;
+    width: 100%;
+    border: 1px solid $border-gray;
+    opacity: 0.2;
+  }
+
+  @media (max-width: $desktop-width) {
+    &::before {
+      top: 17px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
+}
 
 .page-footer__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin: 14px auto;
+  padding-left: 30px;
   font-size: 13px;
   line-height: 24px;
   align-items: center;
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  text-align: center;
   color: $gray-darkest;
   opacity: 0.5;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 39px;
+    margin-bottom: 23px;
+  }
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
@@ -414,11 +439,11 @@ page-footer__links-wrap {
   margin-right: 143px;
 
   @media (max-width: $desktop-width-max) {
-    display: none;
+    margin-right: 43px;
   }
 
-  @media (max-width: $tablet-width) {
-
+  @media (max-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -458,6 +483,3 @@ page-footer__links-wrap {
     margin: 0 auto;
   }
 }
-
-// padding-left: 12.2%;
-// padding-right: 12.5%;

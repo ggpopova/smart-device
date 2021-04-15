@@ -1,28 +1,67 @@
-'use strict'
+'use strict';
+
+const ESCAPE_KEYCODE = 27;
 
 const body = document.querySelector(`body`);
 
-const noJsElement = document.querySelector(`.no-js`);
-noJsElement.classList.remove(`no-js`);
+// Управление отображением мобильного меню
 
-const menuNav = document.querySelector(`.menu-nav`);
-const menuNavToggle = document.querySelector(`.menu-nav__toggle`);
+const noJsElement = document.querySelector(`.no-js`);
+if (noJsElement) {
+  noJsElement.classList.remove(`no-js`);
+}
+
+const menuNav = document.querySelector(`.menu-main`);
+const menuNavToggle = document.querySelector(`.menu-main__toggle`);
 
 if (menuNav && menuNavToggle) {
-  menuNav.classList.remove(`menu-nav-nojs`);
+  menuNav.classList.remove(`menu-main-nojs`);
 
-  menuNav.classList.add(`menu-nav--closed`);
+  menuNav.classList.add(`menu-main--closed`);
 
   menuNavToggle.addEventListener(`click`, () => {
-      if (menuNav.classList.contains(`menu-nav--closed`)) {
-        menuNav.classList.remove(`menu-nav--closed`);
-        menuNav.classList.add(`menu-nav--opened`);
+      if (menuNav.classList.contains(`menu-main--closed`)) {
+        menuNav.classList.remove(`menu-main--closed`);
+        menuNav.classList.add(`menu-main--opened`);
         body.style.overflow = `hidden`;
       } else {
-        menuNav.classList.add(`menu-nav--closed`);
-        menuNav.classList.remove(`menu-nav--opened`);
+        menuNav.classList.add(`menu-main--closed`);
+        menuNav.classList.remove(`menu-main--opened`);
         body.style.overflow = `none`;
       }
     }
   );
 }
+
+// Управление отображением модального окна
+
+const modalOpenButton = document.querySelector(`.menu-main__item--btn a`);
+const modal = document.querySelector(`.modal`);
+const modalCloseButton = document.querySelector(`.modal__close-btn`);
+
+const openModal = () => {
+  modal.classList.remove(`modal--closed`);
+  modal.classList.add(`modal--opened`);
+
+  document.addEventListener(`keydown`, escapeClickHandler);
+  modalOpenButton.removeEventListener(`click`, openModal);
+  modalCloseButton.addEventListener(`click`, closeModal);
+};
+
+const closeModal = () => {
+  modal.classList.add(`modal--closed`);
+  modal.classList.remove(`modal--opened`);
+
+  document.removeEventListener(`keydown`, escapeClickHandler);
+  modalCloseButton.removeEventListener(`click`, closeModal);
+  modalOpenButton.addEventListener(`click`, openModal);
+};
+
+const escapeClickHandler = (evt) => {
+  if (evt.keyCode === ESCAPE_KEYCODE) {
+    evt.preventDefault();
+    closeModal();
+  }
+};
+
+modalOpenButton.addEventListener(`click`, openModal);

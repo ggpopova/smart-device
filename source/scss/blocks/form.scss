@@ -1,0 +1,179 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.form--contacts {
+  padding-bottom: 114px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 107px;
+  }
+}
+
+.form-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 40px;
+
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 37px;
+    // padding-bottom: 103px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.form input:not([type="checkbox"]) {
+  width: 270px;
+  padding: 14px 16px;
+  background: $basic-white-f;
+  border: 1px solid $basic-white-f;
+
+  &::placeholder {
+    color: $basic-white;
+    opacity: 1;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 280px;
+    padding: 16px 16px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+}
+
+
+.form textarea {
+  margin-bottom: 41px;
+  padding: 13px 16px;
+  background: $basic-white-f;
+  border: 1px solid $basic-white-f;
+
+  &::placeholder {
+    color: $basic-white;
+    opacity: 1;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 49px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 31px;
+    max-height: 102px;
+  }
+}
+
+.form__submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.form__submit button {
+  width: 270px;
+  margin-right: 29px;
+  padding: 14px 18px;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-blue;
+  border: 1px solid $basic-white;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 283px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.form__submit input[type="checkbox"] {
+  display: none;
+}
+
+.form__submit label {
+  width: 250px;
+  padding-top: 9px;
+  padding-left: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-white;
+  text-align: center;
+  opacity: 0.8;
+  cursor: default;
+  vertical-align: middle;
+
+  &::before {
+    content: " ";
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+    text-align: center;
+    text-indent: 0;
+    background-color: $basic-blue;
+    border: 1px solid $basic-white;
+    border-image: initial;
+    vertical-align: middle;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 225px;
+  }
+}
+
+.form__submit input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid;
+}
+
+.form__submit input:checked + label::before {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/close-button.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.form__submit input:disabled + label::before {
+  background: $basic-blue;
+}

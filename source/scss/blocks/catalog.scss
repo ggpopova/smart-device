@@ -1,6 +1,6 @@
 .catalog {
-  padding-top: 88px;
-  padding-bottom: 124px;
+  padding-top: 89px;
+  padding-bottom: 122px;
   background-color: $gray-darkest;
 
   @media (max-width: $desktop-width) {
@@ -16,7 +16,7 @@
 .catalog h3 {
   margin: 0;
   margin-bottom: 52px;
-  padding-left: 124px;
+  padding-left: 133px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -38,9 +38,9 @@
   }
 }
 
-.catalog-list {
+.catalog__list {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 27px;
   max-width: 1174px;
   margin: 0 auto;
@@ -57,27 +57,7 @@
   }
 }
 
-// .catalog-item {
-//   &:hover {
-//     background-color: $basic-blue;
-
-//     figure {
-//       color: $basic-white;
-//     }
-//     figcaption {
-//       opacity: 0.3;
-//     }
-
-//     img {
-//       opacity: 1;
-//     }
-
-//     a {
-//       opacity: 0.3;
-//     }
-// }
-
-.catalog-item figure {
+.catalog__item figure {
   position: relative;
   margin: 0;
 
@@ -92,7 +72,7 @@
     background-image: url("../img/icon-arrow.svg");
     background-repeat: no-repeat;
     background-position: 58%;
-    z-index: 3;
+    z-index: 1;
   }
 
   &:hover,
@@ -113,8 +93,7 @@
     }
   }
 
-  @media (max-width: $desktop-width)  {
-
+  @media (max-width: $desktop-width) {
     &::before {
       right: 3px;
       bottom: 3px;
@@ -129,9 +108,7 @@
   }
 }
 
-
-
-.catalog-item img {
+.catalog__item img {
   position: relative;
   opacity: 0.2;
   object-fit: cover;
@@ -142,13 +119,13 @@
   }
 }
 
-.catalog-item figcaption {
+.catalog__item figcaption {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
   max-width: 250px;
-  padding: 53px 44px;
+  padding: 48px 48px 48px 51px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -156,7 +133,7 @@
   color: $basic-white;
 
   @media (max-width: $desktop-width) {
-    padding: 37px 50px;
+    padding: 37px 49px;
   }
 
   @media (max-width: $tablet-width) {
@@ -164,9 +141,9 @@
   }
 }
 
-.catalog-figcaption {
+.catalog__figcaption {
   @media (max-width: $desktop-width) {
-    padding-top: 51px;
+    padding-top: 52px;
   }
 
   @media (max-width: $tablet-width) {
