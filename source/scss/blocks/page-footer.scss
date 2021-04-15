@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: flex-start;
   // max-width: 1454px;
-  margin: 0 auto;
+  margin: 0;
   padding: 66px 15px 60px 26px;
 
   @media (max-width: $desktop-width) {
@@ -54,8 +54,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin: 0 auto;
-
     &::before {
       bottom: 48px;
     }
@@ -65,7 +63,7 @@
 .page-footer__links {
   max-width: 250px;
   margin: 0 auto;
-  margin-right: 80px;
+  padding: 0 80px 0;
 
   @media (max-width: $desktop-width) {
     display: flex;
@@ -73,10 +71,8 @@
     max-width: 721px;
     justify-content: space-between;
     align-items: center;
-    padding-left: 22px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-right: 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -158,6 +154,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 auto;
 
   @media (max-width: $desktop-width) {
     flex-direction: row;

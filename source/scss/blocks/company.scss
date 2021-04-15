@@ -10,6 +10,12 @@
     padding-right: 16px;
     padding-left: 16px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 75px;
+    padding-right: 0;
+    padding-left: 12px;
+  }
 }
 
 .company__wrapper {
@@ -112,9 +118,14 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 9px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .company a {
+  display: inline-block;
   min-width: 180px;
   margin-top: 40px;
   padding: 14px 13px;
@@ -139,5 +150,9 @@
 
   @media (max-width: $desktop-width) {
     margin-top: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 14px 48px;
   }
 }

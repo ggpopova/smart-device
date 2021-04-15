@@ -69,6 +69,7 @@
 }
 
 .header-hero__btn {
+  display: inline-block;
   margin-left: 96px;
   margin-bottom: 276px;
   padding: 17px 45px 17px;
@@ -99,7 +100,7 @@
 
   @media (max-width: $tablet-width) {
     margin: 0;
-    padding: 17px 28px;
+    padding: 17px 16px;
   }
 }
 

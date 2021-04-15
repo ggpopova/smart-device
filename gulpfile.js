@@ -123,7 +123,7 @@ const copy = () => {
 // Удаляем файлы из папки build
 
 const clean = () => {
-  return del([`build`]);
+  return del([`build/*/`, `!build/img`]);
 };
 
 // Собираем проект: удаляем папку build, копируем файлы, обрабатываем стили,
@@ -134,7 +134,6 @@ const build = (done) => gulp.series (
   copy,
   styles,
   scripts,
-  images,
   webp,
   sprite
 )(done);

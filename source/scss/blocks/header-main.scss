@@ -11,7 +11,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    max-height: 685px;
+    min-height: 685px;
     background-image: url("../img/wavy-pattern.png"), url("../img/circuit-boards-medium.png");
     background-size: auto, 543px;
     background-position: top center, top 6% left 439px;
@@ -22,7 +22,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    max-height: 647px;
+    min-height: 647px;
     background-image: url("../img/wavy-pattern.png"), url("../img/circuit-boards-small.png");
     background-size: auto, 631px;
     background-position: top center, top -28% left 129px;
@@ -33,7 +33,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    background-position: top center, top -28% left 27px;
+    min-height: 647px;
+    background-position: top center, top -12% left 27px;
   }
 }
 
@@ -66,13 +67,17 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 232px;
+    margin-bottom: 215px;
     margin-top: 15px;
   }
 }
 
 .header-main__logo {
   margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    min-height: 39px;
+  }
 }
 
 .header-main__logo-text {

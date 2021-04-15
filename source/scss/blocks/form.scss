@@ -31,7 +31,8 @@
 }
 
 .form input:not([type="checkbox"]) {
-  width: 270px;
+  max-width: 767px;
+  min-width: 270px;
   padding: 14px 16px;
   background: $basic-white-f;
   border: 1px solid $basic-white-f;
@@ -42,7 +43,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    width: 280px;
+    min-width: 180px;
     padding: 16px 16px;
   }
 
@@ -110,7 +111,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    width: 283px;
+    max-width: 283px;
   }
 
   @media (max-width: $tablet-width) {
