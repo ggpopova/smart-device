@@ -1,16 +1,16 @@
-.main-wrap {
-  background-image: url("../img/triangle-pattern.svg");
+.advantages {
+  background-image: url("../img/triangle-pattern-large.svg");
   background-repeat: no-repeat;
   background-size: 2243px 1347px;
   background-position: top -28px left -300px;
 
   @media (max-width: $desktop-width) {
-    background-image: url("../img/triangle-pattern-2.svg");
+    background-image: url("../img/triangle-pattern-medium.svg");
     background-position: top -349px left -469px;
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url("../img/triangle-pattern-3.svg");
+    background-image: url("../img/triangle-pattern-small.svg");
     background-position: bottom 54px left -469px;
   }
 }
@@ -26,18 +26,18 @@
 
   @media (max-width: $desktop-width) {
     gap: 29px;
-    margin: 55px auto 65px;
-    padding-top: 53px;
+    margin: 0 auto 65px auto;
+    padding-top: 108px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
-    margin-top: 37px;
     margin-bottom: 59px;
-    padding-left: 12px;
+    padding-top: 145px;
     padding-right: 11px;
+    padding-left: 12px;
   }
 
   @media (max-width: $mobile-width) {
@@ -77,47 +77,9 @@
   }
 }
 
-.advantages__item:nth-child(3n) > p:nth-child(3n) {
-  margin-bottom: 46px;
-
-  @media (max-width: $desktop-width) {
-    margin-bottom: 0;
-  }
-}
-
-.advantages__item:nth-child(2) {
-  @media (max-width: $tablet-width) {
-    padding-right: 16px;
-  }
-}
-
 .advantages__item:nth-child(3n) {
   @media (max-width: $tablet-width) {
     padding-bottom: 63px;
-  }
-}
-
-.advantages__item:nth-child(3n) > h3:nth-child(2n) {
-  @media (max-width: $tablet-width) {
-    margin-bottom: 13px;
-  }
-}
-
-.advantages__item:nth-child(4n) > h3:nth-child(2n) {
-  @media (max-width: $tablet-width) {
-    margin-bottom: 14px;
-  }
-}
-
-.advantages__item:nth-child(4n) > p:nth-child(3n) {
-  @media (max-width: $tablet-width) {
-    padding-bottom: -13px;
-  }
-}
-
-.advantages__item:nth-child(4) {
-  @media (max-width: $tablet-width) {
-    padding-bottom: 20px;
   }
 }
 
@@ -153,4 +115,38 @@
   margin: 0;
   line-height: 22px;
   color: $gray;
+}
+
+// Подгонка под макет
+
+.advantages__item:nth-child(3n) > p:nth-child(3n) {
+  margin-bottom: 46px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__item:nth-child(3n) > h3:nth-child(2n) {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 13px;
+  }
+}
+
+.advantages__item:nth-child(4n) > h3:nth-child(2n) {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
+}
+
+.advantages__item:nth-child(4n) > p:nth-child(3n) {
+  @media (max-width: $tablet-width) {
+    padding-bottom: -13px;
+  }
+}
+
+.advantages__item:nth-child(4) {
+  @media (max-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
 }
