@@ -1,0 +1,80 @@
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-modal input:not([type="checkbox"]) {
+  width: 100%;
+  margin-bottom: 32px;
+  line-height: 22px;
+}
+
+.form-modal textarea {
+  margin-bottom: 34px;
+}
+
+.form-modal button {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 14px 18px;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-blue;
+  border: 1px solid $basic-white;
+  border-radius: 5px;
+}
+
+.form-modal__submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-white;
+  opacity: 0.8;
+}
+
+.form-modal__submit input[type="checkbox"] {
+  display: none;
+}
+
+.form-modal__submit label {
+  position: relative;
+  padding-left: 56px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $basic-white;
+  }
+}
+
+.form-modal__submit input:checked + label {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-image: url("../img/icon-checkmark.svg");
+    background-repeat: no-repeat;
+  }
+}

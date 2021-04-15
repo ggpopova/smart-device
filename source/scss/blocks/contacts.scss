@@ -1,12 +1,12 @@
 .contacts {
   background-color: $basic-blue;
-  background-image: url("../img/photo-6.png");
+  background-image: url("../img/paper-plane.png");
   background-size: 1745px 765px;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/photo-6@2x.png");
+    background-image: url("../img/paper-plane@2x.png");
   }
 
   @media (max-width: $desktop-width-max) {
