@@ -64,14 +64,15 @@
   &::before {
     position: absolute;
     content: "";
-    right: 5px;
-    bottom: 5px;
+    display: block;
+    right: 0;
+    bottom: 0;
     width: 63px;
     height: 63px;
     background-color: $basic-blue;
     background-image: url("../img/icon-arrow.svg");
     background-repeat: no-repeat;
-    background-position: 58%;
+    background-position: 50%;
     z-index: 1;
   }
 
@@ -109,9 +110,9 @@
 }
 
 .catalog__item img {
+  display: block;
   position: relative;
   opacity: 0.2;
-  object-fit: cover;
 
   @media (max-width: $desktop-width) {
     width: 100%;
