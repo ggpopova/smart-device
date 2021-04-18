@@ -1,21 +1,21 @@
-.form-modal {
+.modal__wrapper form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
 }
 
-.form-modal input:not([type="checkbox"]) {
+.modal__wrapper form input:not([type="checkbox"]) {
   width: 100%;
   margin-bottom: 32px;
   line-height: 22px;
 }
 
-.form-modal textarea {
+.modal__wrapper form textarea {
   margin-bottom: 34px;
 }
 
-.form-modal button {
+.modal__wrapper form button {
   width: 100%;
   margin: 0;
   margin-bottom: 33px;

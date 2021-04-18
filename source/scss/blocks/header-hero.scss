@@ -1,4 +1,4 @@
-.header-hero h2 {
+.header-hero h1 {
   margin: 0 0 25px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 80px;
@@ -71,7 +71,6 @@
 .header-hero__btn {
   display: inline-block;
   margin-left: 96px;
-  margin-bottom: 276px;
   padding: 17px 45px 17px;
   background-color: $basic-blue;
   border-radius: 5px;
@@ -80,6 +79,7 @@
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+  vertical-align: middle;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $basic-white;
@@ -94,7 +94,6 @@
 
   @media (max-width: $desktop-width) {
     margin-left: 112px;
-    margin-bottom: 164px;
     padding: 17px 31px;
   }
 

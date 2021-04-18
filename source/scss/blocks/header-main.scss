@@ -1,17 +1,17 @@
 .header-main {
-  min-height: 878px;
+  padding-bottom: 276px;
   background-color: $gray-darkest;
   background-image: url("../img/wavy-pattern.png"), url("../img/circuit-boards-large.png");
   background-repeat: no-repeat;
-  background-position: top center, top left 4px;
-  background-size: cover;
+  background-position: top center,top 67px right;
+  background-size: cover, auto;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/wavy-pattern@2x.png"), url("../img/circuit-boards-large@2x.png");
   }
 
   @media (max-width: $desktop-width) {
-    min-height: 685px;
+    padding-bottom: 164px;
     background-image: url("../img/wavy-pattern.png"), url("../img/circuit-boards-medium.png");
     background-size: auto, 543px;
     background-position: top center, top 6% left 439px;
@@ -22,7 +22,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    min-height: 647px;
+    padding-bottom: 70px;
     background-image: url("../img/wavy-pattern.png"), url("../img/circuit-boards-small.png");
     background-size: auto, 631px;
     background-position: top center, top -28% left 129px;
@@ -33,7 +33,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 647px;
     background-position: top center, top -12% left 27px;
   }
 }
