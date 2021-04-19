@@ -16,6 +16,7 @@ const imageminJpegtran = require("imagemin-jpegtran");
 const imageminSvgo = require("imagemin-svgo");
 const gulpWebp = require("gulp-webp");
 const terser = require("gulp-terser");
+const concat = require("gulp-concat");
 
 // Обрабатываем код на SASS: составляем карту кода, превращаем его в единый CSS,
 // добавляем префиксы, сжимаем, добавляем суффикс min и записываем в папку build/css
@@ -70,7 +71,7 @@ const reload = done => {
 const watcher = () => {
   gulp.watch(`source/scss/**/*.scss`, gulp.series(styles, reload));
   gulp.watch(`source/*.html`, gulp.series(copy, reload));
-  gulp.watch(`source/js/script.js`, gulp.series(scripts, reload));
+  gulp.watch(`source/js/*.js`, gulp.series(scripts, reload));
 };
 
 // Обрабатываем код на JS: сжимаем,
@@ -78,13 +79,9 @@ const watcher = () => {
 
 const scripts = () => {
   return gulp
-    .src(`source/js/script.js`)
+    .src(`source/js/*.js`)
     .pipe(terser())
-    .pipe(
-      rename({
-        suffix: `.min`
-      })
-    )
+    .pipe(concat(`script.min.js`))
     .pipe(gulp.dest(`build/js`))
     .pipe(sync.stream())
 };
