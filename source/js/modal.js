@@ -2,8 +2,6 @@
 
 // модальное окно Заказать звонок
 (function () {
-  var modalOpen = document.querySelector('.modal-overlay--open');
-  var modalClose = document.querySelector('.modal__close');
   var modal = document.querySelector('.modal');
   var body = document.querySelector('body');
 
@@ -27,10 +25,8 @@
 
   var setVisible = function (visible) {
     if (visible) {
-      body.classList.add('modal-overlay--open');
       document.addEventListener('keydown', escapeClickHandler);
     } else {
-      body.classList.remove('modal-overlay--open');
       modal.classList.remove('modal-overlay--show');
       document.removeEventListener('keydown', escapeClickHandler);
     }

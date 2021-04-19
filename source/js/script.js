@@ -6,32 +6,32 @@ const body = document.querySelector(`body`);
 
 // Управление отображением мобильного меню
 
-const noJsElement = document.querySelector(`.no-js`);
-if (noJsElement) {
-  noJsElement.classList.remove(`no-js`);
-}
+// const noJsElement = document.querySelector(`.no-js`);
+// if (noJsElement) {
+//   noJsElement.classList.remove(`no-js`);
+// }
 
-const menuNav = document.querySelector(`.menu-main`);
-const menuNavToggle = document.querySelector(`.menu-main__toggle`);
+// const menuNav = document.querySelector(`.menu-main`);
+// const menuNavToggle = document.querySelector(`.menu-main__toggle`);
 
-if (menuNav && menuNavToggle) {
-  menuNav.classList.remove(`menu-main-nojs`);
+// if (menuNav && menuNavToggle) {
+//   menuNav.classList.remove(`menu-main-nojs`);
 
-  menuNav.classList.add(`menu-main--closed`);
+//   menuNav.classList.add(`menu-main--closed`);
 
-  menuNavToggle.addEventListener(`click`, () => {
-      if (menuNav.classList.contains(`menu-main--closed`)) {
-        menuNav.classList.remove(`menu-main--closed`);
-        menuNav.classList.add(`menu-main--opened`);
-        body.style.overflow = `hidden`;
-      } else {
-        menuNav.classList.add(`menu-main--closed`);
-        menuNav.classList.remove(`menu-main--opened`);
-        body.style.overflow = `none`;
-      }
-    }
-  );
-}
+//   menuNavToggle.addEventListener(`click`, () => {
+//       if (menuNav.classList.contains(`menu-main--closed`)) {
+//         menuNav.classList.remove(`menu-main--closed`);
+//         menuNav.classList.add(`menu-main--opened`);
+//         body.style.overflow = `hidden`;
+//       } else {
+//         menuNav.classList.add(`menu-main--closed`);
+//         menuNav.classList.remove(`menu-main--opened`);
+//         body.style.overflow = `none`;
+//       }
+//     }
+//   );
+// }
 
 // Управление отображением модального окна
 
@@ -65,3 +65,20 @@ const escapeClickHandler = (evt) => {
 };
 
 modalOpenButton.addEventListener(`click`, openModal);
+
+
+
+// Плавная прокрутка
+
+const smoothLinks = document.querySelectorAll(`a[href^="#"]`);
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener(`click`, function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute(`href`);
+
+        document.querySelector(id).scrollIntoView({
+            behavior: `smooth`,
+            block: `start`
+        });
+    });
+};

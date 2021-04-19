@@ -7,14 +7,6 @@
   list-style: none;
 }
 
-.menu-main__item:first-of-type {
-  margin-left: 35px;
-
-  @media (max-width: $mobile-width) {
-    margin-left: 0;
-  }
-}
-
 .menu-main__item {
   margin-left: 89px;
 
@@ -50,6 +42,11 @@
   @media (max-width: $desktop-width) {
     width: 25px;
     height: 19px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
   }
 }
 

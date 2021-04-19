@@ -1,5 +1,28 @@
-.header-hero h1 {
-  margin: 0 0 25px;
+.header-title {
+  position: relative;
+  margin-top: 229px;
+  padding-bottom: 276px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 115px;
+    padding-bottom: 163px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 229px;
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 227px;
+    padding-bottom: 72px;
+  }
+}
+
+.header-title h1 {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 6px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 80px;
   line-height: 94px;
@@ -9,8 +32,9 @@
 
   @media (max-width: $desktop-width) {
     max-width: 386px;
-    margin: 0 0 29px;
-    padding-left: 60px;
+    margin: 0;
+    margin-bottom: 27px;
+    padding-left: 68px;
     font-size: 60px;
     line-height: 70px;
   }
@@ -22,11 +46,12 @@
   }
 }
 
-.header-hero p {
+.header-title p {
   position: relative;
-  max-width: 710px;
-  margin: 0 0 45px;
-  padding-left: 96px;
+  max-width: 712px;
+  margin: 0;
+  margin-bottom: 45px;
+  padding-left: 104px;
   font-size: 22px;
   line-height: 34px;
   color: $basic-white;
@@ -35,7 +60,7 @@
     position: absolute;
     content: "";
     top: 17px;
-    left: 0;
+    left: 11px;
     width: 66px;
     height: 2px;
     background-color: $basic-white;
@@ -43,21 +68,23 @@
 
   @media (max-width: $desktop-width) {
     max-width: 466px;
-    padding-left: 114px;
-    margin: 0 0 54px;
+    padding-left: 119px;
+    margin: 0;
+    margin-bottom: 55px;
     font-size: 18px;
     line-height: 28px;
 
     &::before {
       width: 33px;
-      top: 15px;
-      left: 63px;
+      top: 16px;
+      left: 71px;
     }
   }
 
   @media (max-width: $tablet-width) {
     max-width: 370px;
-    margin: 0 0 40px;
+    margin: 0;
+    margin-bottom: 40px;
     padding-left: 54px;
     font-size: 16px;
     line-height: 25px;
@@ -68,9 +95,9 @@
   }
 }
 
-.header-hero__btn {
+.header-title__btn {
   display: inline-block;
-  margin-left: 96px;
+  margin-left: 106px;
   padding: 17px 45px 17px;
   background-color: $basic-blue;
   border-radius: 5px;
@@ -93,8 +120,8 @@
   }
 
   @media (max-width: $desktop-width) {
-    margin-left: 112px;
-    padding: 17px 31px;
+    margin-left: 119px;
+    padding: 18px 31px;
   }
 
   @media (max-width: $tablet-width) {
@@ -103,13 +130,13 @@
   }
 }
 
-.header-hero__btn--large {
+.header-title__btn--large {
   @media (max-width: $tablet-width) {
     display: none;
   }
 }
 
-.header-hero__btn--small {
+.header-title__btn--small {
   display: none;
 
   @media (max-width: $tablet-width) {
@@ -118,12 +145,17 @@
     margin-left: 3px;
     padding-left: 37px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 3px;
+    margin-right: -10px;
+  }
 }
 
-.header-hero__scroll-up {
-  position: fixed;
-  top: 693px;
-  left: 257px;
+.header-title__scroll-down {
+  position: absolute;
+  left: 15px;
+  bottom: 30%;
   width: auto;
   height: 13px;
   cursor: pointer;
@@ -132,6 +164,7 @@
   line-height: 16px;
   opacity: 0.5;
   transform: translate(-45px, 323%) rotate(-90deg);
+  z-index: 3;
 
   @media (max-width: $desktop-width) {
     display: none;

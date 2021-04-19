@@ -1,20 +1,3 @@
-
-.accordion {
-  @media (max-width: $tablet-width) {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      bottom: 4px;
-      width: 100%;
-      height: 1px;
-      border: 1px solid $border-gray;
-      opacity: 0.2;
-    }
-  }
-}
-
 .accordion label {
   display: flex;
   flex-direction: row;
@@ -35,7 +18,8 @@
     justify-content: flex-start;
     align-items: center;
     height: 69px;
-    padding: 6px 10px;
+    margin-bottom: 0;
+    padding: 36px 15px;
     cursor: pointer;
   }
 }
@@ -95,6 +79,7 @@
 .accordion input:checked ~ .accordion__panel {
   @media (max-width: $tablet-width) {
     min-height: 121px;
+    margin-top: 3px;
     margin-bottom: 29px;
   }
 }

@@ -1,9 +1,8 @@
 .header-main {
-  padding-bottom: 276px;
   background-color: $gray-darkest;
   background-image: url("../img/wavy-pattern.png"), url("../img/circuit-boards-large.png");
   background-repeat: no-repeat;
-  background-position: top center,top 67px right;
+  background-position: top center, top 119px right 13.4%;
   background-size: cover, auto;
 
   @media (min-resolution: 2dppx) {
@@ -11,10 +10,9 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding-bottom: 164px;
     background-image: url("../img/wavy-pattern.png"), url("../img/circuit-boards-medium.png");
     background-size: auto, 543px;
-    background-position: top center, top 6% left 439px;
+    background-position: top center, top 17px right -109%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/wavy-pattern@2x.png"), url("../img/circuit-boards-medium@2x.png");
@@ -22,10 +20,9 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding-bottom: 70px;
     background-image: url("../img/wavy-pattern.png"), url("../img/circuit-boards-small.png");
     background-size: auto, 631px;
-    background-position: top center, top -28% left 129px;
+    background-position: top center, top 17px right -109%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/wavy-pattern@2x.png"), url("../img/circuit-boards-small@2x.png");
@@ -33,20 +30,29 @@
   }
 
   @media (max-width: $mobile-width) {
-    background-position: top center, top -12% left 27px;
+    background-position: top center, top -28% left -8%;
   }
 }
 
 .header-main__wrapper {
   display: flex;
   flex-direction: column;
-  padding-left: 27px;
-  padding-right: 13px;
+  padding-top: 32px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 19px;
+    padding-right: 12px;
+  }
 
   @media (max-width: $tablet-width) {
     max-width: 320px;
+    padding-top: 15px;
     padding-left: 14px;
-    padding-right: 11px;
+    padding-right: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 17px;
   }
 }
 
@@ -54,28 +60,29 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 229px;
-  padding: 0 5px;
-
-  @media (max-width: $desktop-width) {
-    margin-top: 19px;
-    margin-bottom: 115px;
-    padding-left: 0;
-    padding-right: 11px;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin-bottom: 215px;
-    margin-top: 15px;
-  }
 }
 
 .header-main__logo {
   margin-right: auto;
+  padding-left: 12px;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 5px;
+  }
 
   @media (max-width: $tablet-width) {
     min-height: 39px;
+    padding-left: 5px;
+  }
+}
+
+.header-main__logo-img {
+  width: 52px;
+  height: 52px;
+
+  @media (max-width: $tablet-width) {
+    width: 38px;
+    height: 38px;
   }
 }
 
@@ -84,3 +91,9 @@
     display: none;
   }
 }
+
+// .header-main__logo-text {
+//   @media (max-width: $tablet-width) {
+//     display: none;
+//   }
+// }

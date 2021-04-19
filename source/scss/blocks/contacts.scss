@@ -1,9 +1,8 @@
 .contacts {
   background-color: $basic-blue;
   background-image: url("../img/paper-plane.png");
-  background-size: 1745px 765px;
+  background-position: top -60px left 110%;
   background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/paper-plane@2x.png");
@@ -31,12 +30,12 @@
   margin-right: 119px;
 
   @media (max-width: $desktop-width) {
-    max-width: 594px;
+    max-width: 604px;
     margin: 0 auto;
   }
 }
 
-.contacts h3 {
+.contacts__wrapper h3 {
   margin: 0 0 10px;
   padding-top: 93px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
@@ -49,6 +48,7 @@
   @media (max-width: $desktop-width) {
     margin: 0 0 18px;
     padding-top: 80px;
+    padding-left: 12px;
     font-size: 32px;
     line-height: 45px;
     text-align: left;
@@ -56,20 +56,21 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 16px;
+    padding-top: 0;
+    padding-left: 0;
     font-size: 28px;
     line-height: 39px;
-    padding-top: 0;
   }
 }
 
-.contacts p {
+.contacts__wrapper p {
   margin: 0;
   margin-bottom: 53px;
   color: $basic-white;
 
   @media (max-width: $desktop-width) {
     margin-bottom: 54px;
-    padding-left: 7px;
+    padding-left: 18px;
   }
 
   @media (max-width: $tablet-width) {

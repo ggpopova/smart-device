@@ -19,30 +19,27 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  max-width: 1214px;
-  margin: 0 auto 105px;
-  padding: 111px 20px 0;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 111px 20px 105px;
   list-style: none;
 
   @media (max-width: $desktop-width) {
-    gap: 29px;
-    margin: 0 auto 65px auto;
-    padding-top: 108px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0 auto 60px auto;
+    padding: 51px 20px 0;
   }
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
-    margin-bottom: 59px;
-    padding-top: 145px;
+    padding-top: 39px;
     padding-right: 11px;
     padding-left: 12px;
   }
 
   @media (max-width: $mobile-width) {
     gap: 19px;
-    padding-top: 39px;
+    margin-bottom: 56px;
+    padding-bottom: 0;
   }
 }
 
@@ -50,7 +47,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 42px 36px 66px 43px;
+  max-height: 299px;
+  min-height: 299px;
+  padding: 42px 28px 66px 49px;
   background-color: $basic-white;
   border: 1px solid $gray-lightest;
   border-left: 3px solid $basic-blue;
@@ -70,23 +69,27 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding: 24px 19px 24px 29px;
+    max-height: 307px;
+    min-height: 232px;
+    padding: 26px 11px 24px 30px;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 25px 17px 29px 27px;
+    max-height: 312px;
+    padding: 25px 17px 29px 23px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-right: 2px;
+    min-height: 233px;
+    padding-right: 6px;
   }
 }
 
-.advantages__item:nth-child(3n) {
-  @media (max-width: $tablet-width) {
-    padding-bottom: 63px;
-  }
-}
+// .advantages__item:nth-child(3n) {
+//   @media (max-width: $tablet-width) {
+//     padding-bottom: 63px;
+//   }
+// }
 
 .advantages__item svg {
   margin-bottom: 19px;
@@ -124,34 +127,34 @@
 
 // Подгонка под макет
 
-.advantages__item:nth-child(3n) > p:nth-child(3n) {
-  margin-bottom: 46px;
+// .advantages__item:nth-child(3n) > p:nth-child(3n) {
+//   margin-bottom: 46px;
 
-  @media (max-width: $desktop-width) {
-    margin-bottom: 0;
-  }
-}
+//   @media (max-width: $desktop-width) {
+//     margin-bottom: 0;
+//   }
+// }
 
-.advantages__item:nth-child(3n) > h3:nth-child(2n) {
-  @media (max-width: $tablet-width) {
-    margin-bottom: 13px;
-  }
-}
+// .advantages__item:nth-child(3n) > h3:nth-child(2n) {
+//   @media (max-width: $tablet-width) {
+//     margin-bottom: 13px;
+//   }
+// }
 
-.advantages__item:nth-child(4n) > h3:nth-child(2n) {
-  @media (max-width: $tablet-width) {
-    margin-bottom: 14px;
-  }
-}
+// .advantages__item:nth-child(4n) > h3:nth-child(2n) {
+//   @media (max-width: $tablet-width) {
+//     margin-bottom: 14px;
+//   }
+// }
 
-.advantages__item:nth-child(4n) > p:nth-child(3n) {
-  @media (max-width: $tablet-width) {
-    padding-bottom: -13px;
-  }
-}
+// .advantages__item:nth-child(4n) > p:nth-child(3n) {
+//   @media (max-width: $tablet-width) {
+//     padding-bottom: -13px;
+//   }
+// }
 
-.advantages__item:nth-child(4) {
-  @media (max-width: $tablet-width) {
-    padding-bottom: 20px;
-  }
-}
+// .advantages__item:nth-child(4) {
+//   @media (max-width: $tablet-width) {
+//     padding-bottom: 20px;
+//   }
+// }

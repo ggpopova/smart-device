@@ -1,20 +1,21 @@
 .company {
-  margin-bottom: 110px;
+  padding-bottom: 110px;
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 85px;
+    padding-bottom: 83px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 64px;
+    padding-bottom: 64px;
     padding-right: 16px;
     padding-left: 16px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 75px;
-    padding-right: 0;
-    padding-left: 12px;
+    margin-bottom: 64px;
+    padding-bottom: 0;
+    padding-left: 16px;
+    padding-right: 15px;
   }
 }
 
@@ -44,8 +45,9 @@
   }
 
   @media (max-width: $desktop-width) {
+    min-width: 720px;
     padding-left: 191px;
-    padding-right: 5px;
+    padding-right: 0;
 
     &::before {
       top: -2px;
@@ -61,6 +63,11 @@
     &::before {
       display: none;
     }
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 289px;
+    margin: 0 auto;
   }
 }
 
@@ -104,7 +111,7 @@
   }
 }
 
-.company__wrapper p:last-of-type{
+.company__wrapper p:last-of-type {
   display: none;
   margin: 0;
 
@@ -119,9 +126,9 @@
     margin-bottom: 9px;
   }
 
-  @media (max-width: $mobile-width) {
-    margin-bottom: 38px;
-  }
+  // @media (max-width: $mobile-width) {
+  //   margin-bottom: 38px;
+  // }
 }
 
 .company a {
@@ -153,7 +160,7 @@
     margin-top: 20px;
   }
 
-  @media (max-width: $mobile-width) {
-    padding: 14px 48px;
-  }
+  // @media (max-width: $mobile-width) {
+  //   padding: 14px 48px;
+  // }
 }
