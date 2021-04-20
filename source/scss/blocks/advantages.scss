@@ -2,7 +2,7 @@
   background-image: url("../img/triangle-pattern-large.svg");
   background-repeat: no-repeat;
   background-size: 2243px 1347px;
-  background-position: top -28px left -300px;
+  background-position: top -28px left 88%;
 
   @media (max-width: $desktop-width) {
     background-image: url("../img/triangle-pattern-medium.svg");
@@ -21,18 +21,18 @@
   gap: 30px;
   max-width: 1210px;
   margin: 0 auto;
-  padding: 111px 20px 105px;
+  padding: 111px 15px 107px 26px;
   list-style: none;
 
   @media (max-width: $desktop-width) {
     margin: 0 auto 60px auto;
-    padding: 51px 20px 0;
+    padding: 51px 10px 0 25px;
   }
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
     padding-top: 39px;
-    padding-right: 11px;
+    padding-right: 16px;
     padding-left: 12px;
   }
 
@@ -49,11 +49,12 @@
   justify-content: flex-start;
   max-height: 299px;
   min-height: 299px;
-  padding: 42px 28px 66px 49px;
+  padding: 44px 35px 66px 42px;
   background-color: $basic-white;
   border: 1px solid $gray-lightest;
   border-left: 3px solid $basic-blue;
   z-index: 1;
+  cursor: grab;
 
   &:hover {
     background-color: $basic-blue;
@@ -71,7 +72,7 @@
   @media (max-width: $desktop-width) {
     max-height: 307px;
     min-height: 232px;
-    padding: 26px 11px 24px 30px;
+    padding: 26px 21px 24px 23px;
   }
 
   @media (max-width: $tablet-width) {
@@ -81,15 +82,8 @@
 
   @media (max-width: $mobile-width) {
     min-height: 233px;
-    padding-right: 6px;
   }
 }
-
-// .advantages__item:nth-child(3n) {
-//   @media (max-width: $tablet-width) {
-//     padding-bottom: 63px;
-//   }
-// }
 
 .advantages__item svg {
   margin-bottom: 19px;
@@ -124,37 +118,3 @@
   line-height: 22px;
   color: $gray;
 }
-
-// Подгонка под макет
-
-// .advantages__item:nth-child(3n) > p:nth-child(3n) {
-//   margin-bottom: 46px;
-
-//   @media (max-width: $desktop-width) {
-//     margin-bottom: 0;
-//   }
-// }
-
-// .advantages__item:nth-child(3n) > h3:nth-child(2n) {
-//   @media (max-width: $tablet-width) {
-//     margin-bottom: 13px;
-//   }
-// }
-
-// .advantages__item:nth-child(4n) > h3:nth-child(2n) {
-//   @media (max-width: $tablet-width) {
-//     margin-bottom: 14px;
-//   }
-// }
-
-// .advantages__item:nth-child(4n) > p:nth-child(3n) {
-//   @media (max-width: $tablet-width) {
-//     padding-bottom: -13px;
-//   }
-// }
-
-// .advantages__item:nth-child(4) {
-//   @media (max-width: $tablet-width) {
-//     padding-bottom: 20px;
-//   }
-// }

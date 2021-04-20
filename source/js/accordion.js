@@ -2,7 +2,7 @@
 
 // аккордион на mobile в футере
 (function () {
-  const accordion = document.querySelectorAll(`.accordion`);
+  const accordion = document.querySelectorAll(`.accordion__button`);
   const panels = document.querySelectorAll(`.accordion__panel`);
 
   document.querySelector(`.accordion__panel--no-js`).classList.remove(`accordion__panel--no-js`);

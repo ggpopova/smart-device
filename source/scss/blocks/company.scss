@@ -1,5 +1,5 @@
 .company {
-  padding-bottom: 110px;
+  padding-bottom: 108px;
 
   @media (max-width: $desktop-width) {
     padding-bottom: 83px;
@@ -58,6 +58,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    min-width: 305px;
     padding-left: 0;
 
     &::before {
@@ -159,8 +160,4 @@
   @media (max-width: $desktop-width) {
     margin-top: 20px;
   }
-
-  // @media (max-width: $mobile-width) {
-  //   padding: 14px 48px;
-  // }
 }

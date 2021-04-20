@@ -1,4 +1,4 @@
-.accordion {
+.accordion__button {
   display: flex;
   flex-direction: column;
   margin: 0 0 25px;
@@ -20,17 +20,17 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    min-width: 320px;
+    min-width: 300px;
     height: 69px;
     margin: 0 auto;
-    padding: 29px 15px;
+    padding: 29px 7px;
     cursor: pointer;
 
     &::before {
       content: "";
       position: absolute;
       top: 40%;
-      right: 17px;
+      right: 10px;
       width: 16px;
       height: 16px;
       background-image: url("../img/plus.svg");
@@ -39,32 +39,26 @@
     }
 
     &--active::after {
-      top: -5px;
-      content: url("../img/minus.svg");
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      width: 16px;
+      height: 1px;
+      background-image: url("../img/minus.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &--active::before {
+      background: none;
     }
   }
 }
 
-// .accordion input:checked + label::after {
-//   @media (max-width: $tablet-width) {
-//     content: "";
-//     position: absolute;
-//     width: 16px;
-//     height: 2px;
-//     top: 47%;
-//     right: 13px;
-//     background-position: 70% 50%;
-//     background-color: $background-gray-darker;
-//   }
-// }
-
-// .accordion input {
-//   display: none;
-// }
-
 .accordion__panel {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
 
   @media (max-width: $desktop-width) {
@@ -74,23 +68,19 @@
   @media (max-width: $tablet-width) {
     display: none;
     margin-top: 8px;
+    margin-bottom: 27px;
     padding-left: 15px;
     padding-right: 15px;
-    // margin-top: -1px;
-    // overflow: hidden;
-    // height: 0;
-    // position: relative;
-    // z-index: 10;
   }
 }
 
-// .accordion input:checked ~ .accordion__panel {
-//   @media (max-width: $tablet-width) {
-//     min-height: 121px;
-//     margin-top: 3px;
-//     margin-bottom: 29px;
-//   }
-// }
+.accordion__panel--row {
+  flex-direction: row;
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
 
 .accordion__panel-list {
   display: flex;

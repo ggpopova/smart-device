@@ -1,15 +1,15 @@
 .contacts {
   background-color: $basic-blue;
   background-image: url("../img/paper-plane.png");
-  background-position: top -60px left 110%;
+  background-position: top -60px left 175px;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/paper-plane@2x.png");
   }
 
-  @media (max-width: $desktop-width-max) {
-    background-position: top -62px left 174px;
+  @media (max-width: $desktop) {
+    background-position: top -62px left 52%;
   }
 
   @media (max-width: $desktop-width) {
@@ -19,6 +19,13 @@
   @media (max-width: $tablet-width) {
     padding-top: 31px;
     padding-bottom: 41px;
+  }
+}
+
+.contacts__wrap {
+  @media (max-width: $tablet-width) {
+    padding-left: 14px;
+    padding-right: 16px;
   }
 }
 
