@@ -190,11 +190,9 @@
           </div>
 
           <div class="page-footer__accordion-wrap">
-          <section class="page-footer__menu accordion">
-            <h2 class="visually-hidden">Полезные ссылки Smart Device</h2>
-            <input id="ac-1" name="accordion-1" type="checkbox"/>
-              <label for="ac-1">Разделы сайта</label>
-              <div class="accordion__panel">
+          <section class="page-footer__menu">
+            <button class="accordion" type="button" aria-label="Открыть выпадающий список" tabindex="-1">Разделы сайта</button>
+              <div class="accordion__panel accordion__panel--no-js">
                 <ul class="page-footer__list">
                   <li class="page-footer__item"><a href="#">О компании</a></li>
                   <li class="page-footer__item"><a href="#">Продукты</a></li>
@@ -209,11 +207,9 @@
             </div>
           </section>
 
-          <section class="page-footer__contacts accordion">
-            <h2 class="visually-hidden">Smart Device. Адрес и телефоны для связи</h2>
-            <input id="ac-2" name="accordion-1" type="checkbox" checked/>
-              <label for="ac-2">Наш офис</label>
-              <div class="accordion__panel accordion__panel-list accordion__panel--active">
+          <section class="page-footer__contacts">
+            <button class="accordion" type="button" aria-label="Открыть выпадающий список" tabindex="-1">Наш офис</button>
+              <div class="accordion__panel accordion__panel--active">
                 <address>г. Мытищи, Олимпийский проспект,&nbsp;д.10</address>
                 <ul class="page-footer__contacts-list">
                   <li class="page-footer__contacts-item"><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
