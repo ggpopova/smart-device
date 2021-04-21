@@ -75,7 +75,7 @@
 .company h3 {
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-family: $font-roboto-condensed;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -133,7 +133,7 @@
   min-width: 180px;
   margin-top: 40px;
   padding: 14px 13px;
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-family: $font-roboto-condensed;
   font-weight: bold;
   line-height: 16px;
   vertical-align: middle;

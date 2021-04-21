@@ -9,12 +9,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-top: 229px;
-    padding-bottom: 70px;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-top: 227px;
+    margin-top: 231px;
     padding-bottom: 72px;
   }
 }
@@ -23,7 +18,7 @@
   margin: 0;
   margin-bottom: 25px;
   padding-left: 6px;
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-family: $font-roboto-condensed;
   font-size: 80px;
   line-height: 94px;
   letter-spacing: 0.07em;
@@ -101,7 +96,7 @@
   padding: 17px 45px 17px;
   background-color: $basic-blue;
   border-radius: 5px;
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-family: $font-roboto-condensed;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -142,7 +137,7 @@
   @media (max-width: $tablet-width) {
     display: block;
     margin: 0;
-    margin-left: 3px;
+    margin-left: 4px;
     padding-left: 22px;
   }
 }

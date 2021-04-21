@@ -1,10 +1,9 @@
 .menu-main {
+  @include list-style;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: baseline;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .menu-main__item {
@@ -59,7 +58,7 @@
 }
 
 .menu-main__item--btn {
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-family: $font-roboto-condensed;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;

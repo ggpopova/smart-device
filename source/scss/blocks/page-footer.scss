@@ -7,6 +7,7 @@
 .page-footer__content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   min-width: 1460px;
@@ -71,6 +72,7 @@
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    min-width: 320px;
     padding-top: 45px;
     padding-left: 34px;
     padding-right: 25px;
@@ -102,7 +104,9 @@
 
   @media (max-width: $tablet-width) {
     width: 225px;
-    padding-left: 7px;
+    margin-right: 0;
+    padding-left: 5px;
+    margin-bottom: 27px;
   }
 }
 
@@ -129,14 +133,13 @@
 }
 
 .page-footer__social {
+  @include list-style;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 111px;
-  margin: 0;
   margin-top: 47px;
-  padding: 0;
-  list-style: none;
 
   @media (max-width: $desktop-width) {
     align-items: inherit;
@@ -145,7 +148,11 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin: 23px auto 0;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
   }
 }
 
@@ -166,7 +173,7 @@
 .page-footer__accordion-wrap {
   display: flex;
   flex-direction: row;
-
+  flex-wrap: wrap;
   justify-content: space-between;
 
   @media (max-width: $desktop-width) {
@@ -195,16 +202,33 @@
   }
 
   @media (max-width: $tablet-width) {
+    position: relative;
+    width: 100vw;
     margin-right: 0;
-    border-top: 1px solid $border-gray;
-    border-bottom: 1px solid $border-gray;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -2px;
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid $border-gray;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -3px;
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px solid $border-gray;
+    }
   }
 }
 
 .page-footer__list {
-  margin: 0 78px 0 0;
-  padding: 0;
-  list-style: none;
+  @include list-style;
+  margin-right: 78px;
 }
 
 .page-footer__list:nth-child(2n) {
@@ -227,9 +251,7 @@
 }
 
 .page-footer__contacts-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-style;
 }
 
 .page-footer__contacts-item a {
@@ -255,6 +277,7 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 14px auto;
   padding-left: 30px;
@@ -278,14 +301,15 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 29px;
+    padding-top: 26px;
+    padding-right: 35px;
   }
 }
 
 .page-footer__wrapper-copyright {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row;
+  justify-content: space-evenly;
   margin: 0;
   margin-right: 143px;
 

@@ -33,7 +33,7 @@
   margin: 0;
   margin-bottom: 52px;
   padding-left: 133px;
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-family: $font-roboto-condensed;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -65,14 +65,11 @@
 }
 
 .catalog__list {
+  @include list-style($pd:0 9px 0 0, $mg:0 auto);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1179px;
-  margin: 0 auto;
-  padding: 0;
-  padding-left: 9px;
-  list-style: none;
 
   @media (max-width: $desktop-width) {
     grid-template-columns: 1fr;
@@ -124,7 +121,7 @@
   margin: 0;
   min-height: 620px;
   padding: 48px 48px 48px 45px;
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-family: $font-roboto-condensed;
   font-size: 20px;
   line-height: 30px;
   text-align: left;

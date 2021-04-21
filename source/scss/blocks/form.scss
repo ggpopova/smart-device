@@ -20,8 +20,8 @@ form {
 
 .form__wrapper {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 40px;
 
   @media (max-width: $desktop-width) {
@@ -83,6 +83,7 @@ form textarea {
 .form__submit {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
 
@@ -96,7 +97,7 @@ form textarea {
   width: 270px;
   margin-right: 37px;
   padding: 14px 18px;
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-family: $font-roboto-condensed;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;

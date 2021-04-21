@@ -37,6 +37,7 @@
 .header-main__wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding-top: 32px;
 
   @media (max-width: $desktop-width) {
@@ -59,6 +60,7 @@
 .header-main__nav {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
 }
 

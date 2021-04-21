@@ -6,6 +6,10 @@ $desktop-width: 1023px;
 $tablet-width: 769px;
 $mobile-width: 320px;
 
+// Font-family
+
+$font-roboto-condensed: "Roboto Condensed", "Arial Black", sans-serif;
+
 // COLORS
 $basic-white: rgb(255, 255, 255);
 $basic-black: rgb(0, 0, 0);
@@ -24,5 +28,4 @@ $background-gray-light: rgba(0, 0, 0, 0.5);
 $background-gray-dark: rgb(88, 88, 88);
 $background-gray-darker: rgb(196, 196, 196);
 $border-gray: rgba(98, 105, 98, 0.2);
-
 $basic-white-f: rgba(255, 255, 255, 0.102);

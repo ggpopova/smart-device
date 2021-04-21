@@ -3,7 +3,7 @@
   flex-direction: column;
   margin: 0 0 25px;
   padding: 0;
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-family: $font-roboto-condensed;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -16,8 +16,8 @@
 
   @media (max-width: $tablet-width) {
     position: relative;
-    z-index: 20;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     min-width: 300px;
@@ -25,6 +25,7 @@
     margin: 0 auto;
     padding: 29px 7px;
     cursor: pointer;
+    z-index: 20;
 
     &::before {
       content: "";
@@ -59,6 +60,7 @@
 .accordion__panel {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: flex-start;
 
   @media (max-width: $desktop-width) {
@@ -85,6 +87,7 @@
 .accordion__panel-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: flex-start;
 
   @media (max-width: $tablet-width) {
@@ -112,12 +115,12 @@
 .accordion__panel--visible,
 .accordion__panel--no-js {
   @media (max-width: $tablet-width) {
-    display: block;
+    display: flex;
   }
 }
 
 .accordion__panel--active {
   @media (max-width: $tablet-width) {
-    display: block;
+    display: flex;
   }
 }
