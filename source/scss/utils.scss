@@ -7,7 +7,8 @@
 }
 
 body {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-color: $basic-white;
   color: $basic-black;
@@ -15,6 +16,14 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
 }
 
 a {

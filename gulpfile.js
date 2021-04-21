@@ -80,7 +80,6 @@ const watcher = () => {
 const scripts = () => {
   return gulp
     .src(`source/js/*.js`)
-
     .pipe(concat(`script.js`))
     .pipe(gulp.dest(`build/js`))
 };
