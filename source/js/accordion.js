@@ -16,7 +16,7 @@
         }
 
         const button = evt.target;
-        button.classList.toggle(`accordion--active`);
+        button.classList.toggle(`accordion__button--active`);
 
         const panel = button.nextElementSibling;
         panel.classList.toggle(`accordion__panel--active`);
