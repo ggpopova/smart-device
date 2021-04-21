@@ -5,7 +5,7 @@
 
   @media (max-width: $desktop-width) {
     padding-top: 50px;
-    padding-bottom: 83px;
+    padding-bottom: 80px;
   }
 
   @media (max-width: $tablet-width) {
@@ -45,7 +45,6 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding-left: 10px;
     font-size: 32px;
     line-height: 45px;
     text-align: left;
@@ -77,8 +76,9 @@
 
   @media (max-width: $desktop-width) {
     grid-template-columns: 1fr;
-    gap: 42px;
-    max-width: 715px;
+    gap: 44px;
+    max-width: 720px;
+    padding-right: 2px;
     padding-left: 0;
   }
 

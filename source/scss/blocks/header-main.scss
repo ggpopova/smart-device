@@ -84,9 +84,15 @@
 }
 
 .header-main__logo-img {
+  width: 52px;
+  height: 52px;
   margin-right: 8px;
 
   @media (max-width: $desktop-width) {
+    margin-right: 5px;
+  }
+
+  @media (max-width: $tablet-width) {
     width: 38px;
     height: 38px;
     margin-right: 0;
