@@ -1,6 +1,5 @@
 .page-footer {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   align-self: flex-end;
 }
@@ -12,11 +11,12 @@
   align-items: flex-start;
   min-width: 1460px;
   margin: 0 auto;
-  padding: 66px 19px 17px 26px;
+  padding: 66px 19px 57px 26px;
 
   @media (max-width: $desktop-width-max) {
     min-width: 0;
     padding-left: 16px;
+    padding-bottom: 17px;
   }
 
   @media (max-width: $desktop-width) {
@@ -240,12 +240,8 @@
 }
 
 .page-footer__bottom {
+  width: 100%;
   border-top: 1px solid $border-gray;
-  top: -18px;
-
-  @media (max-width: $desktop-width) {
-    top: 17px;
-  }
 }
 
 .page-footer__wrapper {

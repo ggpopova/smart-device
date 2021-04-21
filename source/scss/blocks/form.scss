@@ -5,7 +5,7 @@ form {
 }
 
 .contacts__wrapper form {
-  padding-bottom: 113px;
+  padding-bottom: 112px;
 
   @media (max-width: $desktop-width) {
     padding-bottom: 104px;
@@ -94,7 +94,7 @@ form textarea {
 
 .form__submit button {
   width: 270px;
-  margin-right: 29px;
+  margin-right: 37px;
   padding: 14px 18px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-weight: bold;
@@ -135,7 +135,7 @@ form textarea {
   position: relative;
   width: 250px;
   padding-top: 9px;
-  padding-left: 40px;
+  padding-left: 34px;
   font-size: 14px;
   line-height: 16px;
   color: $basic-white;
