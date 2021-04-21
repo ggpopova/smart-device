@@ -20,7 +20,6 @@
 
         const panel = button.nextElementSibling;
         panel.classList.toggle(`accordion__panel--active`);
-
       });
     }
   }

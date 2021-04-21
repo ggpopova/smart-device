@@ -80,10 +80,9 @@ const watcher = () => {
 const scripts = () => {
   return gulp
     .src(`source/js/*.js`)
-    .pipe(terser())
-    .pipe(concat(`script.min.js`))
+
+    .pipe(concat(`script.js`))
     .pipe(gulp.dest(`build/js`))
-    .pipe(sync.stream())
 };
 
 // Создаем единый файл - спрайт - из всех SVG-иконок: склеиваем файлы,

@@ -1,10 +1,10 @@
-.form {
+form {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.form--contacts {
+.contacts__wrapper form {
   padding-bottom: 113px;
 
   @media (max-width: $desktop-width) {
@@ -34,11 +34,12 @@
   }
 }
 
-.form input:not([type="checkbox"]) {
+form input:not([type="checkbox"]) {
   max-width: 767px;
   min-width: 270px;
   padding: 14px 16px;
   background: $basic-white-f;
+  color: $basic-white;
   border: 1px solid $basic-white-f;
 
   &::placeholder {
@@ -57,7 +58,7 @@
   }
 }
 
-.form textarea {
+form textarea {
   margin-bottom: 45px;
   padding: 13px 16px;
   background: $basic-white-f;
@@ -146,7 +147,6 @@
     position: absolute;
     left: 0;
     top: 8px;
-    display: inline-block;
     width: 16px;
     height: 16px;
     border: 1px solid $basic-white;
@@ -169,16 +169,8 @@
 }
 
 .form__submit input:checked + label {
-  position: relative;
-
   &::before {
-    content: "";
-    position: absolute;
     top: 8px;
-    left: 0;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     border: none;
     background-image: url("../img/icon-checkmark.svg");
     background-repeat: no-repeat;

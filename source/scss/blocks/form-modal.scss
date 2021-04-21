@@ -56,7 +56,6 @@
     position: absolute;
     left: 0;
     top: 8px;
-    display: inline-block;
     width: 16px;
     height: 16px;
     border: 1px solid $basic-white;
@@ -64,16 +63,8 @@
 }
 
 .form-modal__submit input:checked + label {
-  position: relative;
-
   &::before {
-    content: "";
-    position: absolute;
     top: 8px;
-    left: 0;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     border: none;
     background-image: url("../img/icon-checkmark.svg");
     background-repeat: no-repeat;

@@ -114,14 +114,14 @@
         <div class="catalog__wrapper container">
           <h3>Service Device предлагает&nbsp;следующие товары и&nbsp;услуги</h3>
             <ul class="catalog__list">
-              <li class="catalog__item">
-                <a class="catalog__link catalog__link--production" href="#">Производство<br>печатных плат</a>
+              <li class="catalog__item catalog__item--production">
+                <a class="catalog__link" href="#">Производство<br>печатных плат</a>
               </li>
-              <li class="catalog__item">
-                <a class="catalog__link catalog__link--instalation" href="#">Монтаж печатных<br>плат</a>
+              <li class="catalog__item catalog__item--instalation">
+                <a class="catalog__link" href="#">Монтаж печатных<br>плат</a>
               </li>
-              <li class="catalog__item">
-                <a class="catalog__link catalog__link--led" href="#">Комплектующие<br>для светотехники</a>
+              <li class="catalog__item catalog__item--led">
+                <a class="catalog__link" href="#">Комплектующие<br>для светотехники</a>
               </li>
             </ul>
           </div>
@@ -132,7 +132,7 @@
           <div class="contacts__wrapper">
             <h3>Остались вопросы? Задайте их нам!</h3>
             <p>Мы проконсультируем Вас бесплатно</p>
-            <form class="form form--contacts" method="GET">
+            <form method="GET">
               <div class="form__wrapper">
                 <label class="visually-hidden" for="name">Имя</label>
                 <input type="text" id="name" name="name" placeholder="Имя" required>
@@ -165,21 +165,21 @@
               <p>1999-2018 SD Service Devices</p>
               <ul class="page-footer__social">
                 <li>
-                  <a class="page-footer__link" href="#" aria-label="Мы в Facebook">
+                  <a href="#" aria-label="Мы в Facebook">
                     <svg width="27" height="27" viewBox="0 0 27 27">
                       <use xlink:href="img/sprite.svg#icon-facebook"/>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="page-footer__link" href="#" aria-label="Мы в Одноклассниках">
+                  <a href="#" aria-label="Мы в Одноклассниках">
                     <svg width="27" height="26" viewBox="0 0 27 26">
                       <use xlink:href="img/sprite.svg#icon-ok"/>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="page-footer__link" href="#" aria-label="Мы в контакте">
+                  <a href="#" aria-label="Мы в контакте">
                     <svg width="27" height="26" viewBox="0 0 27 26">
                       <use xlink:href="img/sprite.svg#icon-vk"/>
                     </svg>
@@ -241,7 +241,7 @@
         <button class="modal__close-btn" type="button" aria-label="Закрыть"></button>
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="form form-modal" method="GET">
+        <form method="GET">
           <label class="visually-hidden" for="call-name">Имя</label>
           <input type="text" name="call-name" id="call-name" placeholder="Имя" required>
           <label class="visually-hidden" for="phone">Телефон</label>
