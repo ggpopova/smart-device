@@ -1,8 +1,8 @@
 .company {
-  padding-bottom: 109px;
+  padding-bottom: 108px;
 
   @media (max-width: $desktop-width) {
-    padding-bottom: 83px;
+    padding-bottom: 85px;
   }
 
   @media (max-width: $tablet-width) {
@@ -24,15 +24,15 @@
   max-width: 1174px;
   margin: 0 auto;
   padding-right: 8px;
-  padding-left: 191px;
+  padding-left: 182px;
   line-height: 22px;
   color: $gray;
 
   &::before {
     position: absolute;
     content: "";
-    top: 6px;
-    left: -1.8%;
+    top: 4px;
+    left: -2.4%;
     width: 220px;
     height: 317px;
     background-image: url("../img/company-year.png");
@@ -46,7 +46,7 @@
 
   @media (max-width: $desktop-width) {
     min-width: 720px;
-    padding-left: 191px;
+    padding-left: 194px;
     padding-right: 0;
 
     &::before {
@@ -104,13 +104,20 @@
   }
 }
 
-.company__wrapper p:last-of-type {
+.company__wrapper > p:nth-child(3n) {
   margin: 0;
 
   @media (max-width: $desktop-width) {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+    display: none;
+  }
+}
+
+.company__wrapper p:last-of-type {
+  display: none;
+  margin: 0;
+
+  @media (max-width: $desktop-width) {
+    display: block;
     overflow: hidden;
     line-height: 22px;
     color: $gray;
@@ -118,7 +125,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    -webkit-line-clamp: 8;
     margin-bottom: 9px;
   }
 }

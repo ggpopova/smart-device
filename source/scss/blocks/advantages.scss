@@ -2,7 +2,7 @@
   background-image: url("../img/triangle-pattern-large.svg");
   background-repeat: no-repeat;
   background-size: 2243px 1347px;
-  background-position: top -28px left 88%;
+  background-position: top -28px left 92%;
 
   @media (max-width: $desktop-width) {
     background-image: url("../img/triangle-pattern-medium.svg");
@@ -16,15 +16,15 @@
 }
 
 .advantages__list {
-  @include list-style($pd:111px 15px 101px 26px, $mg:0 auto);
+  @include list-style($pd:111px 19px 106px 18px, $mg:0 auto);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 1210px;
 
   @media (max-width: $desktop-width) {
-    margin: 0 auto 60px auto;
-    padding: 51px 10px 0 25px;
+    margin: 0 auto 53px;
+    padding: 51px 26px 0 25px;
   }
 
   @media (max-width: $tablet-width) {
@@ -47,7 +47,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   min-height: 299px;
-  padding: 44px 35px 66px 42px;
+  padding: 40px 37px 66px 42px;
   background-color: $basic-white;
   border: 1px solid $gray-lightest;
   border-left: 3px solid $basic-blue;
@@ -68,9 +68,8 @@
   }
 
   @media (max-width: $desktop-width) {
-    max-height: 307px;
     min-height: 232px;
-    padding: 26px 21px 24px 23px;
+    padding: 26px 20px 24px 24px;
   }
 
   @media (max-width: $tablet-width) {

@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
+  flex-shrink: 0;
 }
 
 .page-footer__content {
@@ -12,7 +13,7 @@
   align-items: flex-start;
   min-width: 1460px;
   margin: 0 auto;
-  padding: 66px 19px 57px 26px;
+  padding: 66px 24px 57px 22px;
 
   @media (max-width: $desktop-width-max) {
     min-width: 0;
@@ -67,7 +68,7 @@
     align-items: center;
     min-width: 770px;
     max-height: 117px;
-    padding: 20px 10px 21px 40px;
+    padding: 20px 24px 21px 25px;
   }
 
   @media (max-width: $tablet-width) {
@@ -97,15 +98,9 @@
     opacity: 0.6;
   }
 
-  @media (max-width: $desktop-width) {
-    margin-right: 14px;
-    margin-bottom: 0;
-  }
-
   @media (max-width: $tablet-width) {
     width: 225px;
     margin-right: 0;
-    padding-left: 5px;
     margin-bottom: 27px;
   }
 }
@@ -139,7 +134,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 111px;
-  margin-top: 47px;
+  margin-top: 52px;
 
   @media (max-width: $desktop-width) {
     align-items: inherit;
@@ -178,7 +173,7 @@
 
   @media (max-width: $desktop-width) {
     flex-direction: row;
-    padding: 42px 20px 37px 41px;
+    padding: 42px 20px 37px 27px;
   }
 
   @media (max-width: $tablet-width) {
@@ -280,7 +275,8 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 14px auto;
-  padding-left: 30px;
+  padding-left: 22px;
+  padding-right: 26px;
   font-size: 13px;
   line-height: 24px;
   align-items: center;
@@ -293,8 +289,8 @@
   @media (max-width: $desktop-width) {
     max-width: 762px;
     margin: 21px 0 22px;
-    padding-left: 41px;
-    padding-right: 2px;
+    padding-left: 26px;
+    padding-right: 18px;
   }
 
   @media (max-width: $tablet-width) {

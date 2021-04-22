@@ -5,7 +5,7 @@
 
   @media (max-width: $desktop-width) {
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 82px;
   }
 
   @media (max-width: $tablet-width) {
@@ -16,7 +16,7 @@
 .catalog__wrapper {
   @media (max-width: $desktop-width) {
     padding-left: 25px;
-    padding-right: 5px;
+    padding-right: 22px;
   }
 
   @media (max-width: $tablet-width) {
@@ -32,7 +32,7 @@
 .catalog__wrapper h3 {
   margin: 0;
   margin-bottom: 52px;
-  padding-left: 133px;
+  padding-left: 125px;
   font-family: $font-roboto-condensed;
   font-style: normal;
   font-weight: normal;
@@ -41,7 +41,9 @@
   color: $basic-white;
 
   @media (max-width: $desktop) {
+    margin-bottom: 49px;
     padding-left: 0;
+    padding-right: 17px;
   }
 
   @media (max-width: $desktop-width) {
@@ -65,7 +67,7 @@
 }
 
 .catalog__list {
-  @include list-style($pd:0 9px 0 0, $mg:0 auto);
+  @include list-style($pd:0 4px 0 4px, $mg:0 auto);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;

@@ -65,7 +65,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="page-main">
       <h2 class="visually-hidden">Smart Device - умные технологии</h2>
       <section class="advantages" id="advantages">
         <ul class="advantages__list">
@@ -81,14 +81,14 @@
               <use xlink:href="img/sprite.svg#icon-hired"></use>
             </svg>
             <h3>Крупные поставщики</h3>
-            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM,&nbsp;CREE, HOLGLITRONIC&nbsp;, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM,&nbsp;CREE, HOLGLITRONIC&shy;, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
           </li>
           <li class="advantages__item">
             <svg width="36" height="31" viewBox="0 0 36 31">
               <use xlink:href="img/sprite.svg#icon-detective"></use>
             </svg>
             <h3>Полная конфиденциальность</h3>
-            <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
+            <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
           </li>
           <li class="advantages__item">
             <svg width="35" height="35" viewBox="0 0 35 35">
@@ -104,6 +104,7 @@
             <h3>О компании</h3>
             <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
             <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,&nbsp;HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),&nbsp;РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..</p>
             <a href="#">Подробнее</a>
           </div>
         </section>
@@ -132,15 +133,15 @@
             <h3>Остались вопросы? Задайте их нам!</h3>
             <p>Мы проконсультируем Вас бесплатно</p>
             <form class="form-box" method="GET">
-              <div class="form__wrapper">
+              <div class="form-box__wrapper">
                 <label class="visually-hidden" for="name">Имя</label>
-                <input type="text" id="name" name="name" placeholder="Имя" required>
+                <input type="text" id="name" name="name-field" placeholder="Имя" required>
                 <label class="visually-hidden" for="phone">Номер телефона</label>
-                <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="\+7(\([0-9]{3}\))([0-9]{7})" maxlength="14" title="+7, не менее 7 и не более 10 цифр" required>
+                <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="^[+][0-9] [(][0-9]{3}[)] [0-9]{3}[-][0-9]{2}[-][0-9]{2}$" maxlength="14" title="+7, не менее 7 и не более 10 цифр" required>
               </div>
               <label class="visually-hidden" for="comment">Поле для ввода сообщения</label>
               <textarea name="comment" id="comment" rows="7" cols="35" placeholder="Ваш вопрос"></textarea>
-              <div class="form__submit">
+              <div class="form-box__submit">
                 <button type="submit">Задать вопрос</button>
                 <input type="checkbox" id="agreement" name="agreement" checked="" required>
                 <label for="agreement">Я согласен на обработку персональных данных</label>
@@ -241,14 +242,14 @@
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form method="GET">
-          <label class="visually-hidden" for="call-name">Имя</label>
-          <input type="text" name="call-name" id="call-name" placeholder="Имя" required>
+          <label class="visually-hidden" for="name-modal">Имя</label>
+          <input type="text" name="name-field" id="name-modal" placeholder="Имя" required>
           <label class="visually-hidden" for="phone-modal">Телефон</label>
-          <input type="tel" id="phone-modal" name="phone-modal" placeholder="Телефон" pattern="\+7(\([0-9]{3}\))([0-9]{7})" maxlength="14" title="+7, не менее 7 и не более 10 цифр" required>
-          <textarea name="message-field" id="message" rows="4" cols="35" placeholder="Ваш вопрос" required></textarea>
-          <label class="visually-hidden" for="message">Ваш вопрос</label>
+          <input type="tel" id="phone-modal" name="phone-field" placeholder="Телефон" pattern="\+7(\([0-9]{3}\))([0-9]{7})" maxlength="14" title="+7, не менее 7 и не более 10 цифр" required>
+          <textarea name="message-field" id="message-modal" rows="4" cols="35" placeholder="Ваш вопрос" required></textarea>
+          <label class="visually-hidden" for="message-modal">Ваш вопрос</label>
           <button type="submit">Отправить</button>
-          <div class="form-modal__submit">
+          <div class="modal__submit">
             <input type="checkbox" name="confidentiality" id="confidentiality" checked>
             <label for="confidentiality">Я согласен на обработку  персональных данных</label>
           </div>

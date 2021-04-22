@@ -20,7 +20,7 @@
   margin-bottom: 33px;
 }
 
-.form-modal__submit {
+.modal__submit {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,11 +30,11 @@
   opacity: 0.8;
 }
 
-.form-modal__submit input[type="checkbox"] {
+.modal__submit input[type="checkbox"] {
   display: none;
 }
 
-.form-modal__submit label {
+.modal__submit label {
   position: relative;
   padding-left: 56px;
 
@@ -49,7 +49,7 @@
   }
 }
 
-.form-modal__submit input:checked + label {
+.modal__submit input:checked + label {
   &::before {
     top: 8px;
     border: none;
