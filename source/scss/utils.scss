@@ -1,8 +1,12 @@
 //Global
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   overflow-wrap: anywhere;
 }
 

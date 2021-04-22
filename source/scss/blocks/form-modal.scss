@@ -5,32 +5,19 @@
   width: 100%;
 }
 
-.modal__wrapper form input:not([type="checkbox"]) {
-  width: 100%;
+.modal__wrapper input:not([type="checkbox"]) {
   margin-bottom: 32px;
   line-height: 22px;
 }
 
-.modal__wrapper form textarea {
+.modal__wrapper textarea {
   margin-bottom: 34px;
   resize: none;
 }
 
-.modal__wrapper form button {
-  width: 100%;
+.modal__wrapper button {
   margin: 0;
   margin-bottom: 33px;
-  padding: 14px 18px;
-  font-family: $font-roboto-condensed;
-  font-weight: bold;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: $basic-white;
-  background-color: $basic-blue;
-  border: 1px solid $basic-white;
-  border-radius: 5px;
 }
 
 .form-modal__submit {

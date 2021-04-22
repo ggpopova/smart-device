@@ -11,7 +11,6 @@
   const body = document.querySelector(`body`);
 
   const openModal = () => {
-    console.log(body);
     modal.classList.toggle(`modal--opened`);
     body.style.overflow = `hidden`;
     body.style.height = `100vh`;

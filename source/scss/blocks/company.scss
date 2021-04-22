@@ -104,26 +104,21 @@
   }
 }
 
-.company__wrapper > p:nth-child(3n) {
-  margin: 0;
-
-  @media (max-width: $desktop-width) {
-    display: none;
-  }
-}
-
 .company__wrapper p:last-of-type {
-  display: none;
   margin: 0;
 
   @media (max-width: $desktop-width) {
-    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     line-height: 22px;
     color: $gray;
     margin-bottom: 20px;
   }
 
   @media (max-width: $tablet-width) {
+    -webkit-line-clamp: 8;
     margin-bottom: 9px;
   }
 }

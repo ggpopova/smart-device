@@ -1,10 +1,7 @@
-form {
+.form-box {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-
-.contacts__wrapper form {
   padding-bottom: 112px;
 
   @media (max-width: $desktop-width) {
@@ -35,7 +32,6 @@ form {
 }
 
 form input:not([type="checkbox"]) {
-  max-width: 767px;
   min-width: 270px;
   padding: 14px 16px;
   background: $basic-white-f;
@@ -48,7 +44,6 @@ form input:not([type="checkbox"]) {
   }
 
   @media (max-width: $desktop-width) {
-
     padding: 16px 16px;
   }
 
@@ -96,26 +91,6 @@ form textarea {
 .form__submit button {
   width: 270px;
   margin-right: 37px;
-  padding: 14px 18px;
-  font-family: $font-roboto-condensed;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: $basic-white;
-  background-color: $basic-blue;
-  border: 1px solid $basic-white;
-  border-radius: 5px;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 1;
-  }
 
   @media (max-width: $desktop-width) {
     min-width: 279px;
