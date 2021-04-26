@@ -11,7 +11,7 @@
 
   @media (max-width: $desktop-width) {
     background-image: url("../img/wavy-pattern.png"), url("../img/circuit-boards-medium.png");
-    background-size: auto, 543px;
+    background-size: cover, 543px;
     background-position: top center, top 17px right -109%;
 
     @media (min-resolution: 2dppx) {
@@ -21,7 +21,7 @@
 
   @media (max-width: $tablet-width) {
     background-image: url("../img/wavy-pattern.png"), url("../img/circuit-boards-small.png");
-    background-size: auto, 631px;
+    background-size: cover, 631px;
     background-position: top center, top 17px right -109%;
 
     @media (min-resolution: 2dppx) {
