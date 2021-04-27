@@ -168,6 +168,29 @@
     &::after {
       width: 100%;
       min-height: 256px;
+      background-image: url("../img/catalog-4.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
+      opacity: 0.2;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-4@2x.jpg");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      background-image: url("../img/catalog-5.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
+      opacity: 0.2;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-5@2x.jpg");
     }
   }
 }
@@ -197,6 +220,13 @@
     &::after {
       width: 100%;
       min-height: 256px;
+      background-position: 0 50%;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      background-position: 50% 50%;
     }
   }
 }
@@ -226,6 +256,13 @@
     &::after {
       width: 100%;
       min-height: 256px;
+      background-position: 0;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      background-position: 50% 50%;
     }
   }
 }

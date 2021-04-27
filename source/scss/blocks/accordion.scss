@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    min-width: 300px;
+    max-width: 320px;
     height: 69px;
     margin: 0 auto;
     padding: 29px 14px;
@@ -39,6 +39,10 @@
       background-position: 50% 50%;
     }
 
+    &--active::before {
+      background-image: none;
+    }
+
     &--active::after {
       content: "";
       position: absolute;
@@ -49,10 +53,6 @@
       background-image: url("../img/minus.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
-    }
-
-    &--active::before {
-      background: none;
     }
   }
 }
@@ -109,6 +109,16 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 320px;
+    margin: 0 auto;
+    padding-left: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
   }
 }
 

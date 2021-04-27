@@ -92,6 +92,7 @@
 
 .header-title__btn {
   display: inline-block;
+  max-width: 407px;
   margin-left: 104px;
   padding: 17px 45px 17px;
   background-color: $basic-blue;
@@ -115,11 +116,13 @@
   }
 
   @media (max-width: $desktop-width) {
+    max-width: 379px;
     margin-left: 119px;
     padding: 18px 31px;
   }
 
   @media (max-width: $tablet-width) {
+    max-width: 287px;
     margin: 0;
     padding: 17px 16px;
   }

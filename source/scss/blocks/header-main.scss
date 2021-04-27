@@ -49,7 +49,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    max-width: 320px;
+    min-width: 320px;
     padding-top: 15px;
     padding-left: 14px;
     padding-right: 16px;
@@ -63,12 +63,13 @@
 .header-main__nav {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
 }
 
 .header-main__logo {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-right: auto;
   width: 206px;
   height: 52px;

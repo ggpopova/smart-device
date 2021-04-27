@@ -37,10 +37,15 @@ form input:not([type="checkbox"]) {
   background: $basic-white-f;
   color: $basic-white;
   border: 1px solid $basic-white-f;
+  border-radius: 0;
 
   &::placeholder {
     color: $basic-white;
     opacity: 1;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 
   @media (max-width: $desktop-width) {
@@ -60,10 +65,15 @@ form textarea {
   background: $basic-white-f;
   resize: none;
   border: 1px solid $basic-white-f;
+  border-radius: 0;
 
   &::placeholder {
     color: $basic-white;
     opacity: 1;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 
   @media (max-width: $desktop-width) {
@@ -119,6 +129,7 @@ form textarea {
   color: $basic-white;
   opacity: 0.8;
   vertical-align: middle;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -128,6 +139,10 @@ form textarea {
     width: 16px;
     height: 16px;
     border: 1px solid $basic-white;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 
   @media (max-width: $desktop-width) {
@@ -153,6 +168,11 @@ form textarea {
     background-image: url("../img/icon-checkmark.svg");
     background-repeat: no-repeat;
   }
+
+  &:hover {
+    opacity: 1;
+  }
+
 }
 
 .form-box__submit input:disabled + label::before {
