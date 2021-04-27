@@ -10,7 +10,8 @@
   const modalCloseButton = document.querySelector(`.modal__close-btn`);
   const body = document.querySelector(`body`);
 
-  const openModal = () => {
+  const openModal = (evt) => {
+    evt.preventDefault();
     modal.classList.toggle(`modal--opened`);
     body.style.overflow = `hidden`;
     body.style.height = `100vh`;

@@ -50,7 +50,7 @@
                 </a>
               </li>
               <li class="menu-main__item menu-main__item--btn">
-                <a href="#">Заказать звонок</a>
+                <a target="_blank" href="#">Заказать звонок</a>
               </li>
             </ul>
           </nav>
@@ -133,12 +133,13 @@
           <div class="contacts__wrapper">
             <h3>Остались вопросы? Задайте их нам!</h3>
             <p>Мы проконсультируем Вас бесплатно</p>
-            <form class="form-box" method="GET">
+            <form class="form-box" action="https://echo.htmlacademy.ru" method="GET">
               <div class="form-box__wrapper">
                 <label class="visually-hidden" for="name">Имя</label>
                 <input type="text" id="name" name="name-field" placeholder="Имя" required>
                 <label class="visually-hidden" for="phone">Номер телефона</label>
-                <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="^[+][0-9] [(][0-9]{3}[)] [0-9]{3}[-][0-9]{2}[-][0-9]{2}$" maxlength="14" title="+7, не менее 7 и не более 10 цифр" required>
+                <input type="tel" id="phone" name="phone" placeholder="Телефон"  maxlength="14" title="+7, не менее 7 и не более 10 цифр" data-inputmask="'mask': '+7 (999) 999-9999'" required>
+              <!-- pattern="^[+][0-9] [(][0-9]{3}[)] [0-9]{3}[-][0-9]{2}[-][0-9]{2}$" -->
               </div>
               <label class="visually-hidden" for="comment">Поле для ввода сообщения</label>
               <textarea name="comment" id="comment" rows="7" cols="35" placeholder="Ваш вопрос"></textarea>
@@ -239,14 +240,13 @@
 
     <section class="modal">
       <div class="modal__wrapper">
-        <button class="modal__close-btn" type="button" aria-label="Закрыть"></button>
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form method="GET">
+        <form action="https://echo.htmlacademy.ru" method="POST">
           <label class="visually-hidden" for="name-modal">Имя</label>
           <input type="text" name="name-field" id="name-modal" placeholder="Имя" required>
           <label class="visually-hidden" for="phone-modal">Телефон</label>
-          <input type="tel" id="phone-modal" name="phone-field" placeholder="Телефон" pattern="\+7(\([0-9]{3}\))([0-9]{7})" maxlength="14" title="+7, не менее 7 и не более 10 цифр" required>
+          <input type="tel" id="phone-modal" name="phone-field" placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="14" title="+7, не менее 7 и не более 10 цифр" required>
           <textarea name="message-field" id="message-modal" rows="4" cols="35" placeholder="Ваш вопрос" required></textarea>
           <label class="visually-hidden" for="message-modal">Ваш вопрос</label>
           <button type="submit">Отправить</button>
@@ -255,6 +255,7 @@
             <label for="confidentiality">Я согласен на обработку  персональных данных</label>
           </div>
         </form>
+        <button class="modal__close-btn" type="button" aria-label="Закрыть"></button>
       </div>
     </section>
 
