@@ -82,6 +82,11 @@
   @media (max-width: $desktop-width) {
     flex-direction: column;
   }
+
+  @media (max-width: $tablet-width) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 .accordion__panel-list {

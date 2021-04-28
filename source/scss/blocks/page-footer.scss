@@ -44,7 +44,7 @@
       position: absolute;
       content: "";
       bottom: -3px;
-      width: 100%;
+      width: 100vw;
       height: 1px;
       border: 1px solid $border-gray;
       opacity: 0.2;
@@ -53,7 +53,7 @@
 
   @media (max-width: $tablet-width) {
     min-height: 262px;
-    
+
     &::before {
       border: none;
     }
@@ -230,6 +230,10 @@
 .page-footer__list {
   @include list-style;
   margin-right: 78px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-footer__list:nth-child(2n) {
