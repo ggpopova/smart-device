@@ -136,6 +136,27 @@ if (contactsFormModal) {
   });
 })();
 
+// Управление отправкой формы без согласия на обработку данных
+
+// (() => {
+//   const modalForm = document.querySelector(`.modal form`);
+//   const contactsForm = document.querySelector(`.contacts form`);
+//   const contactsFormAgreement = contactsForm.querySelector(`#agreement`);
+
+//   const onFormSubmit = (evt) => {
+//     console.log(1111);
+//     console.log(evt.target);
+//     if (!evt.target.querySelector(`#agreement`).value) {
+//       evt.preventDefault();
+
+//       evt.target.setCustomValidity(`Вы должны согласиться с обработкой персональных данных`);
+//       evt.target.reportValidity();
+//     }
+//   };
+
+//   contactsForm.addEventListener(`submit`, onFormSubmit);
+// })();
+
 'use strict';
 
 // Управление плавной прокруткой

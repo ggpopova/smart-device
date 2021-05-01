@@ -91,6 +91,7 @@ form textarea {
 }
 
 .form-box__submit {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -120,7 +121,16 @@ form textarea {
 }
 
 .form-box__submit input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  left: calc(50% + 27px);
+  bottom: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form-box__submit label {

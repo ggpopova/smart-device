@@ -21,6 +21,7 @@
 }
 
 .modal__submit {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -31,7 +32,16 @@
 }
 
 .modal__submit input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  left: 8px;
+  bottom: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .modal__submit label {
