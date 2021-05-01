@@ -107,6 +107,7 @@ form textarea {
 .form-box__submit button {
   width: 270px;
   margin-right: 37px;
+  cursor: pointer;
 
   @media (max-width: $desktop-width) {
     min-width: 279px;

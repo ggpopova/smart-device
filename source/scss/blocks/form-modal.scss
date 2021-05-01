@@ -18,6 +18,7 @@
 .modal__wrapper button {
   margin: 0;
   margin-bottom: 33px;
+  cursor: pointer;
 }
 
 .modal__submit {
@@ -47,6 +48,7 @@
 .modal__submit label {
   position: relative;
   padding-left: 56px;
+  cursor: pointer;
 
   &::before {
     content: "";
