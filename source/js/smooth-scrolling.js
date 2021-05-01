@@ -1,6 +1,6 @@
 'use strict';
 
-// Плавная прокрутка
+// Управление плавной прокруткой
 
 (() => {
   const smoothLink = document.querySelector(`.header-title__scroll-down`);

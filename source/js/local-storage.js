@@ -1,6 +1,7 @@
-`use strict`;
+'use strict';
 
-// Хранение данных в localStorage
+// Управление хранением данных в localStorage
+
 const phoneInput = document.querySelector(`#phone`);
 const phoneInputModal = document.querySelector(`#phone-modal`);
 

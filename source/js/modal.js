@@ -5,10 +5,11 @@
 (() => {
   const ESCAPE_KEYCODE = 27;
 
-  const modalOpenButton = document.querySelector(`.menu-main__item--btn a`);
-  const modal = document.querySelector(`.modal`);
-  const modalCloseButton = document.querySelector(`.modal__close-btn`);
   const body = document.querySelector(`body`);
+  const modalOpenButton = body.querySelector(`.menu-main__item--btn a`);
+  const modal = body.querySelector(`.modal`);
+  const modalWrapper = modal.querySelector(`.modal__wrapper`);
+  const modalCloseButton = modalWrapper.querySelector(`.modal__close-btn`);
 
   const openModal = (evt) => {
     evt.preventDefault();
@@ -18,6 +19,7 @@
 
     document.addEventListener(`keydown`, escapeClickHandler);
     modalOpenButton.removeEventListener(`click`, openModal);
+    modal.addEventListener(`click`, modalClickHandler);
     modalCloseButton.addEventListener(`click`, closeModal);
   };
 
@@ -28,12 +30,19 @@
 
     document.removeEventListener(`keydown`, escapeClickHandler);
     modalCloseButton.removeEventListener(`click`, closeModal);
+    modal.removeEventListener(`click`, modalClickHandler);
     modalOpenButton.addEventListener(`click`, openModal);
   };
 
   const escapeClickHandler = (evt) => {
     if (evt.keyCode === ESCAPE_KEYCODE) {
       evt.preventDefault();
+      closeModal();
+    }
+  };
+
+  const modalClickHandler = (evt) => {
+    if (evt.target === modal) {
       closeModal();
     }
   };

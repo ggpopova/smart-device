@@ -48,6 +48,10 @@ form input:not([type="checkbox"]) {
     opacity: 0.5;
   }
 
+  &:active {
+    opacity: 1;
+  }
+
   @media (max-width: $desktop-width) {
     padding: 16px 16px;
   }
