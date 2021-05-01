@@ -34,8 +34,8 @@ const contactsForm = document.querySelector(`#contacts .form`);
 const contactsFormModal = document.querySelector(`.modal .form`);
 
 if (contactsForm) {
-  contactsForm.addEventListener(`submit`, function (event) {
-    event.preventDefault();
+  contactsForm.addEventListener(`submit`, (evt) => {
+    evt.preventDefault();
 
     localStorage.setItem(`name-field`, nameInput.value);
     localStorage.setItem(`phone-field`, phoneInput.value);
@@ -44,8 +44,8 @@ if (contactsForm) {
 }
 
 if (contactsFormModal) {
-  contactsFormModal.addEventListener(`submit`, function (event) {
-    event.preventDefault();
+  contactsFormModal.addEventListener(`submit`, (evt) => {
+    evt.preventDefault();
 
     localStorage.setItem(`name-modal`, nameInputModal.value);
     localStorage.setItem(`phone-modal`, phoneInputModal.value);
