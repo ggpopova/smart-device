@@ -87,13 +87,24 @@
   }
 }
 
-.catalog__item {
+.catalog__link {
   position: relative;
+  display: block;
+  margin: 0;
+  min-height: 620px;
+  padding: 48px 48px 48px 45px;
+  font-family: $font-roboto-condensed;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  color: $basic-white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
 
   &::before {
     position: absolute;
     content: "";
-    display: block;
     right: 0;
     bottom: 0;
     width: 63px;
@@ -115,22 +126,6 @@
     color: $basic-white;
     opacity: 1;
   }
-}
-
-.catalog__link {
-  position: relative;
-  display: block;
-  margin: 0;
-  min-height: 620px;
-  padding: 48px 48px 48px 45px;
-  font-family: $font-roboto-condensed;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: left;
-  color: $basic-white;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 0;
 
   @media (max-width: $desktop-width) {
     min-height: 256px;
@@ -143,11 +138,10 @@
   }
 }
 
-.catalog__item--production {
+.catalog__link--production {
   &::after {
     position: absolute;
     content: "";
-    display: block;
     left: 0;
     top: 0;
     width: 100%;
@@ -195,11 +189,10 @@
   }
 }
 
-.catalog__item--instalation {
+.catalog__link--instalation {
   &::after {
     position: absolute;
     content: "";
-    display: block;
     left: 0;
     top: 0;
     width: 100%;
@@ -231,11 +224,10 @@
   }
 }
 
-.catalog__item--led {
+.catalog__link--led {
   &::after {
     position: absolute;
     content: "";
-    display: block;
     left: 0;
     top: 0;
     width: 100%;
