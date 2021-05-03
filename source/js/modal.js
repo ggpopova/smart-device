@@ -52,31 +52,3 @@
   }
 
 })();
-
-// Управление вводом номера телефона
-
-(() => {
-  const telInputFront = document.querySelector(`.form-box input[type=tel]`);
-
-  telInputFront.addEventListener(`focus`, () => {
-    telInputFront.value = `+7(`;
-  });
-
-  telInputFront.addEventListener(`input`, () => {
-    if (telInputFront.value.length === 6) {
-      telInputFront.value += `)`;
-    }
-  });
-
-  const telInputModal = document.querySelector(`.modal input[type=tel]`);
-
-  telInputModal.addEventListener(`focus`, () => {
-    telInputModal.value = `+7(`;
-  });
-
-  telInputModal.addEventListener(`input`, () => {
-    if (telInputModal.value.length === 6) {
-      telInputModal.value += `)`;
-    }
-  });
-})();
