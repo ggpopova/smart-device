@@ -127,6 +127,19 @@
     opacity: 1;
   }
 
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-color: $basic-blue;
+    background-size: cover;
+    opacity: 0.2;
+  }
+
   @media (max-width: $desktop-width) {
     min-height: 256px;
     margin: 0 auto;
@@ -140,18 +153,8 @@
 
 .catalog__link--production {
   &::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    width: 100%;
     height: 100%;
-    background-color: $basic-blue;
     background-image: url("../img/catalog-1.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    opacity: 0.2;
   }
 
   @media (min-resolution: 2dppx) {
@@ -160,13 +163,8 @@
 
   @media (max-width: $desktop-width) {
     &::after {
-      width: 100%;
       min-height: 256px;
       background-image: url("../img/catalog-4.jpg");
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-size: cover;
-      opacity: 0.2;
     }
 
     @media (min-resolution: 2dppx) {
@@ -177,10 +175,6 @@
   @media (max-width: $tablet-width) {
     &::after {
       background-image: url("../img/catalog-5.jpg");
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-size: cover;
-      opacity: 0.2;
     }
 
     @media (min-resolution: 2dppx) {
@@ -191,18 +185,8 @@
 
 .catalog__link--instalation {
   &::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    width: 100%;
     height: 100%;
-    background-color: $basic-blue;
     background-image: url("../img/catalog-2.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    opacity: 0.2;
   }
 
   @media (min-resolution: 2dppx) {
@@ -226,18 +210,8 @@
 
 .catalog__link--led {
   &::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    width: 100%;
     height: 100%;
-    background-color: $basic-blue;
     background-image: url("../img/catalog-3.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    opacity: 0.2;
   }
 
   @media (min-resolution: 2dppx) {
@@ -246,7 +220,6 @@
 
   @media (max-width: $desktop-width) {
     &::after {
-      width: 100%;
       min-height: 256px;
       background-position: 0;
     }

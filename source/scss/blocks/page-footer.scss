@@ -31,9 +31,9 @@
 .page-footer__links-wrap {
   margin: 0;
 
-  @media (max-width: $desktop-width-max) {
-    margin-right: 23px;
-  }
+  // @media (max-width: $desktop-width-max) {
+  //   margin-right: 23px;
+  // }
 
   @media (max-width: $desktop-width) {
     position: relative;
@@ -230,6 +230,10 @@
 .page-footer__list {
   @include list-style;
   margin-right: 78px;
+
+  @media (max-width: $desktop) {
+    margin-right: 30px;
+  }
 
   @media (max-width: $tablet-width) {
     margin: 0;

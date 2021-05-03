@@ -7,6 +7,7 @@
 
 .modal__wrapper input:not([type="checkbox"]) {
   margin-bottom: 32px;
+  background-color: $form-input;
   line-height: 22px;
 }
 
