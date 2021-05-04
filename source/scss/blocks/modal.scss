@@ -14,14 +14,6 @@
   display: block;
 }
 
-.modal--popup {
-  display: block;
-
-  @media (max-width: $desktop-width) {
-    display: none;
-  }
-}
-
 .modal__wrapper {
   width: 490px;
   height: 605px;

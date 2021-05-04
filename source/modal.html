@@ -17,9 +17,9 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="modalfull-body modalfull-body--opened-modal">
 
-    <header class="header-main header-main--popup">
+    <header class="header-main">
       <div class="header-main__wrapper container">
         <section class="header-main__nav">
           <h2 class="visually-hidden">Smart Device</h2>
@@ -65,7 +65,7 @@
         </section>
       </div>
     </header>
-    <mainclass="page-main">
+    <main class="page-main">
       <h2 class="visually-hidden">Smart Device - умные технологии</h2>
     </main>
 
@@ -153,13 +153,13 @@
       </section>
     </footer>
 
-    <section class="modal modal--popup">
+    <section class="modal modal--opened">
       <div class="modal__wrapper">
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <label class="visually-hidden" for="name-modal">Имя</label>
-          <input type="text" name="name-field" id="name-modal" placeholder="Имя" required>
+          <input type="text" name="name-field" id="name-modal" placeholder="Имя" autofocus required>
           <label class="visually-hidden" for="phone-modal">Телефон</label>
           <input type="tel" id="phone-modal" name="phone-field" placeholder="Телефон" pattern="^(\+7|8)[0-9()]{12}$" maxlength="14" required>
           <textarea name="message-field" id="message-modal" rows="4" cols="35" placeholder="Ваш вопрос"></textarea>
@@ -173,8 +173,6 @@
         <button class="modal__close-btn" type="button" aria-label="Закрыть"></button>
       </div>
     </section>
-
-    <!-- <script src="js/script.js"></script> -->
 
   </body>
 
