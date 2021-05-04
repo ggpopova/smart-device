@@ -31,10 +31,6 @@
 .page-footer__links-wrap {
   margin: 0;
 
-  // @media (max-width: $desktop-width-max) {
-  //   margin-right: 23px;
-  // }
-
   @media (max-width: $desktop-width) {
     position: relative;
     width: 100%;
@@ -62,6 +58,10 @@
 
 .page-footer__links {
   padding: 0;
+
+  @media (max-width: $desktop-width-max) {
+    margin-right: 20px;
+  }
 
   @media (max-width: $desktop-width) {
     display: flex;
@@ -187,7 +187,6 @@
     flex-direction: column;
     width: 100%;
     padding: 0;
-    // padding-top: 146px;
   }
 }
 
@@ -195,7 +194,7 @@
   margin-right: 229px;
 
   @media (max-width: $desktop-width-max) {
-    margin-right: 47px;
+    margin-right: 27px;
   }
 
   @media (max-width: $desktop-width) {

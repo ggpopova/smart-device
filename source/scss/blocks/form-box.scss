@@ -31,10 +31,6 @@
   }
 }
 
-// form input[type="search"] {
-//   background: $form-input;
-// }
-
 form input:not([type="checkbox"]) {
   min-width: 270px;
   padding: 14px 16px;
@@ -45,7 +41,6 @@ form input:not([type="checkbox"]) {
 
   &::placeholder {
     color: $basic-white;
-    // opacity: 1;
   }
 
   &:active {
