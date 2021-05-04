@@ -29,6 +29,10 @@
     if (telInputFront.value.length === 6 && telInputFront.selectionStart === 5 && telInputFront.selectionEnd === 5 && evt.inputType === InputButtonType.DELETE) {
       telInputFront.value = telInputFront.value.slice(0, -1);
     }
+
+    if (telInputFront.value.length === 2) {
+      telInputFront.value = `+7(`;
+    }
   });
 
   const telInputModal = document.querySelector(`.modal input[type=tel]`);

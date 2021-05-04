@@ -19,7 +19,7 @@
 
   <body>
 
-    <header class="header-main">
+    <header class="header-main header-main--popup">
       <div class="header-main__wrapper container">
         <section class="header-main__nav">
           <h2 class="visually-hidden">Smart Device</h2>
@@ -50,7 +50,7 @@
                 </a>
               </li>
               <li class="menu-main__item menu-main__item--btn">
-                <a target="_blank" href="modal.html">Заказать звонок</a>
+                <a target="_blank" href="#">Заказать звонок</a>
               </li>
             </ul>
           </nav>
@@ -65,92 +65,8 @@
         </section>
       </div>
     </header>
-
-    <main class="page-main">
+    <mainclass="page-main">
       <h2 class="visually-hidden">Smart Device - умные технологии</h2>
-      <section class="advantages" id="advantages">
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <svg width="30" height="37" viewBox="0 0 30 37">
-              <use xlink:href="img/sprite.svg#icon-stopwatch"></use>
-            </svg>
-            <h3>Оперативные сроки</h3>
-            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-          </li>
-          <li class="advantages__item">
-            <svg width="35" height="35" viewBox="0 0 35 35">
-              <use xlink:href="img/sprite.svg#icon-hired"></use>
-            </svg>
-            <h3>Крупные поставщики</h3>
-            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM,&nbsp;CREE, HOLGLITRONIC&shy;, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
-          </li>
-          <li class="advantages__item">
-            <svg width="36" height="31" viewBox="0 0 36 31">
-              <use xlink:href="img/sprite.svg#icon-detective"></use>
-            </svg>
-            <h3>Полная конфиденциальность</h3>
-            <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
-          </li>
-          <li class="advantages__item">
-            <svg width="35" height="35" viewBox="0 0 35 35">
-              <use xlink:href="img/sprite.svg#icon-tag"></use>
-            </svg>
-            <h3>Персонализация стоимости</h3>
-            <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить&nbsp;ту цену, которая Вас устраивает.</p>
-          </li>
-        </ul>
-
-        <section class="company container">
-          <div class="company__wrapper">
-            <h3>О компании</h3>
-            <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,&nbsp;HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),&nbsp;РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..</p>
-            <a href="#">Подробнее</a>
-          </div>
-        </section>
-      </section>
-
-      <section class="catalog">
-        <div class="catalog__wrapper container">
-          <h3>Service Device предлагает&nbsp;следующие товары и&nbsp;услуги</h3>
-            <ul class="catalog__list">
-              <li class="catalog__item">
-                <a class="catalog__link catalog__link--production" href="#">Производство<br>печатных плат</a>
-              </li>
-              <li class="catalog__item">
-                <a class="catalog__link catalog__link--instalation" href="#">Монтаж печатных<br>плат</a>
-              </li>
-              <li class="catalog__item">
-                <a class="catalog__link catalog__link--led" href="#">Комплектующие<br>для светотехники</a>
-              </li>
-            </ul>
-          </div>
-      </section>
-
-      <section class="contacts">
-        <div class="contacts__wrap container" id="contacts">
-          <div class="contacts__wrapper">
-            <h3>Остались вопросы? Задайте их нам!</h3>
-            <p>Мы проконсультируем Вас бесплатно</p>
-            <form class="form-box" action="https://echo.htmlacademy.ru" method="POST">
-              <div class="form-box__wrapper">
-                <label class="visually-hidden" for="name">Имя</label>
-                <input type="text" id="name" name="name-field" placeholder="Имя" required>
-                <label class="visually-hidden" for="phone">Номер телефона</label>
-                <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="^(\+7|8)[0-9()]{12}$" maxlength="14" required>
-              </div>
-              <label class="visually-hidden" for="comment">Поле для ввода сообщения</label>
-              <textarea name="comment" id="comment" rows="7" cols="35" placeholder="Ваш вопрос"></textarea>
-              <div class="form-box__submit">
-                <button type="submit">Задать вопрос</button>
-                <input type="checkbox" id="agreement" name="agreement" checked required>
-                <label for="agreement">Я согласен на обработку персональных данных</label>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="page-footer">
@@ -237,7 +153,7 @@
       </section>
     </footer>
 
-    <section class="modal">
+    <section class="modal modal--popup">
       <div class="modal__wrapper">
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
@@ -258,7 +174,7 @@
       </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 
   </body>
 
