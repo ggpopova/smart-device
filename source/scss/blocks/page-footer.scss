@@ -25,13 +25,6 @@
     padding-bottom: 17px;
   }
 
-  @media (max-width: $desktop-width-min) {
-    min-width: 0;
-    padding-left: 6px;
-    padding-bottom: 17px;
-  }
-
-
   @media (max-width: $desktop-width) {
     flex-direction: column;
     width: 100%;
