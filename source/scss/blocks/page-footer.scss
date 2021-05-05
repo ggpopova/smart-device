@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   align-self: flex-end;
   flex-shrink: 0;
+
+  @media (max-width: $desktop-width) {
+    justify-content: center;
+  }
 }
 
 .page-footer__content {
@@ -23,6 +27,7 @@
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -307,7 +312,7 @@
 
   @media (max-width: $desktop-width) {
     max-width: 762px;
-    margin: 21px 0 22px;
+    margin: 21px auto 22px;
     padding-left: 26px;
     padding-right: 18px;
   }
