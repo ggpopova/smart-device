@@ -58,5 +58,9 @@
     if (telInputModal.value.length === 6 && telInputModal.selectionStart === 5 && telInputModal.selectionEnd === 5 && evt.inputType === InputButtonType.DELETE) {
       telInputModal.value = telInputModal.value.slice(0, -1);
     }
+
+    if (telInputModal.value.length === 2) {
+      telInputModal.value = `+7(`;
+    }
   });
 })();
