@@ -25,6 +25,10 @@
     padding-bottom: 17px;
   }
 
+  @media (max-width: $desktop-width-min) {
+    padding-left: 6px;
+  }
+
   @media (max-width: $desktop-width) {
     flex-direction: column;
     width: 100%;
